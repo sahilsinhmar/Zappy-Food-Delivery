@@ -25,6 +25,7 @@
 
 .card-container {
   flex-wrap: wrap;
+  margin-top: 20px;
   display: flex;
 }
 
@@ -69,6 +70,40 @@
   gap: 2px;
   margin-top: 2px;
   font-size: .9rem;
+  display: flex;
+}
+
+.skeleton {
+  background: #ddd;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.skeleton.square {
+  width: 255px;
+  height: 200px;
+}
+
+.skeleton.textl {
+  width: 180px;
+  height: 25px;
+}
+
+.skeleton.texts {
+  width: 150px;
+  height: 17px;
+}
+
+.skeleton-square {
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 41px;
+  margin-left: 10px;
+  display: flex;
+}
+
+.square-container {
+  flex-direction: column;
   display: flex;
 }
 

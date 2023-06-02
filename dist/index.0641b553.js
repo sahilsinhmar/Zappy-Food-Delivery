@@ -2947,1839 +2947,44 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-/**
-    Header
-      -Logo
-      -Nav Items
-      -Card
-    Body
-      -Search Bar
-      -RestrauntList
-      -RestrauntCard
-        -Image
-        -Name
-        -Ratings
-        -Cusines 
-     Footer
-      Links
-         
-
- */ const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-        href: "/",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            alt: "logo",
-            className: "logo",
-            src: "https://cdn.dribbble.com/users/296356/screenshots/10594761/eatfit_brand_logo-02.jpg"
-        }, void 0, false, {
-            fileName: "src/app.js",
-            lineNumber: 23,
-            columnNumber: 5
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/app.js",
-        lineNumber: 22,
-        columnNumber: 21
-    }, undefined);
-_c = Title;
-const Header = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
-        children: [
-            Title(),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "nav-items",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Home"
-                        }, void 0, false, {
-                            fileName: "src/app.js",
-                            lineNumber: 30,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "About"
-                        }, void 0, false, {
-                            fileName: "src/app.js",
-                            lineNumber: 31,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Contact"
-                        }, void 0, false, {
-                            fileName: "src/app.js",
-                            lineNumber: 32,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Cart"
-                        }, void 0, false, {
-                            fileName: "src/app.js",
-                            lineNumber: 33,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/app.js",
-                    lineNumber: 29,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/app.js",
-                lineNumber: 28,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/app.js",
-        lineNumber: 26,
-        columnNumber: 10
-    }, undefined);
-};
-_c1 = Header;
-// restaurnet list contains the data
-const restraunList = [
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "641414",
-            name: "Baker By Chance",
-            uuid: "e645df5c-015d-45b5-8c84-9bee2d8d1b12",
-            city: "2",
-            area: "Sector 31",
-            totalRatingsString: "100+ ratings",
-            cloudinaryImageId: "7c8afd5bfcaccccf6a7ec7cc7431cb2e",
-            cuisines: [
-                "Bakery",
-                "Desserts"
-            ],
-            tags: [],
-            costForTwo: 50000,
-            costForTwoString: "₹500 FOR TWO",
-            deliveryTime: 28,
-            minDeliveryTime: 28,
-            maxDeliveryTime: 28,
-            slaString: "28 MINS",
-            lastMileTravel: 3.5,
-            slugs: {
-                restaurant: "baker-by-chance-huda-city-huda-city",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "Booth No-176,Huda Market,Sector-31,Gurugram, Gurgaon, Gurugram, Haryana-122003",
-            locality: "Huda Market",
-            parentId: 313023,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            ribbon: [
-                {
-                    type: "PROMOTED"
-                }
-            ],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 4500,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 4500,
-                message: "",
-                title: "Delivery Charge",
-                amount: "4500",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "cid=6893073~p=1~eid=00000188-70e1-94eb-01c2-62d100b80109",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "3.5 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "50% OFF",
-                subHeader: "UPTO ₹100",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "641414",
-                deliveryTime: 28,
-                minDeliveryTime: 28,
-                maxDeliveryTime: 28,
-                lastMileTravel: 3.5,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: true,
-            avgRating: "4.2",
-            totalRatings: 100,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "448934",
-            name: "Shama Chicken Corner",
-            uuid: "1d7ddf30-d631-4cb2-8a90-38d4c7727968",
-            city: "2",
-            area: "Sector 13",
-            totalRatingsString: "100+ ratings",
-            cloudinaryImageId: "rthhvapj5myydhvg0wrj",
-            cuisines: [
-                "Biryani",
-                "North Indian",
-                "Beverages"
-            ],
-            tags: [],
-            costForTwo: 30000,
-            costForTwoString: "₹300 FOR TWO",
-            deliveryTime: 29,
-            minDeliveryTime: 29,
-            maxDeliveryTime: 29,
-            slaString: "29 MINS",
-            lastMileTravel: 2.200000047683716,
-            slugs: {
-                restaurant: "shama-chicken-corner-old-gurgaon-(zone-6)-old-gurgaon-(zone-6)",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "shop no. - 03,13 Rajiv  Nagar sector-13  Gurgaon-122001,  Basai((50), Gurgaon,  Gurugram, Haryana -  122001",
-            locality: "Rajiv Nagar",
-            parentId: 13769,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 3700,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 3700,
-                message: "",
-                title: "Delivery Charge",
-                amount: "3700",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "2.2 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "15% OFF",
-                subHeader: "UPTO ₹45",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "448934",
-                deliveryTime: 29,
-                minDeliveryTime: 29,
-                maxDeliveryTime: 29,
-                lastMileTravel: 2.200000047683716,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "3.7",
-            totalRatings: 100,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "56478",
-            name: "Om Sweets & Snacks (Sector 8)",
-            uuid: "a5493bd8-7328-438c-9b43-87c413bedef9",
-            city: "2",
-            area: "Sector 8",
-            totalRatingsString: "10000+ ratings",
-            cloudinaryImageId: "bztjesdzq7j9fmji3zv6",
-            cuisines: [
-                "Sweets",
-                "North Indian",
-                "South Indian",
-                "Chinese",
-                "Snacks",
-                "Desserts",
-                "Bakery"
-            ],
-            tags: [],
-            costForTwo: 40000,
-            costForTwoString: "₹400 FOR TWO",
-            deliveryTime: 30,
-            minDeliveryTime: 30,
-            maxDeliveryTime: 30,
-            slaString: "30 MINS",
-            lastMileTravel: 0.800000011920929,
-            slugs: {
-                restaurant: "om-sweets-snacks-sector-8-old-gurgaon-zone-6",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "Opposite Water Tank, Arjun Nagar, Sector 8, Gurgaon",
-            locality: "Arjun Nagar",
-            parentId: 676,
-            unserviceable: false,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 3700,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 3700,
-                message: "",
-                title: "Delivery Charge",
-                amount: "3700",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "0.8 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "56478",
-                deliveryTime: 30,
-                minDeliveryTime: 30,
-                maxDeliveryTime: 30,
-                lastMileTravel: 0.800000011920929,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.3",
-            totalRatings: 10000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "509144",
-            name: "Imperfecto Patio",
-            uuid: "a8dd1f29-2a6c-4b95-938e-fbfb0a9c6e07",
-            city: "2",
-            area: "M2K Corporate Park",
-            totalRatingsString: "1000+ ratings",
-            cloudinaryImageId: "zsxafggjjndgrh5d0jzz",
-            cuisines: [
-                "Indian"
-            ],
-            tags: [],
-            costForTwo: 30000,
-            costForTwoString: "₹300 FOR TWO",
-            deliveryTime: 40,
-            minDeliveryTime: 40,
-            maxDeliveryTime: 40,
-            slaString: "40 MINS",
-            lastMileTravel: 5,
-            slugs: {
-                restaurant: "imperfecto-patio-jalvayu-towers-jalvayu-towers",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "M2K, Corporate Park Block N, Mayfield Garden, Sector 51 Gurgaon.122003",
-            locality: "Sector 51",
-            parentId: 239216,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            ribbon: [
-                {
-                    type: "PROMOTED"
-                }
-            ],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 5300,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 5300,
-                message: "",
-                title: "Delivery Charge",
-                amount: "5300",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "cid=6669982~p=4~eid=00000188-70e1-94eb-01c2-62d200b80439",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "5 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "₹200 OFF",
-                subHeader: "ABOVE ₹599",
-                discountTag: "FLAT DEAL",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "509144",
-                deliveryTime: 40,
-                minDeliveryTime: 40,
-                maxDeliveryTime: 40,
-                lastMileTravel: 5,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: true,
-            avgRating: "4.1",
-            totalRatings: 1000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "280771",
-            name: "CHAMAIL SINGH DA DHABA",
-            uuid: "5252be69-c407-4777-a241-d1e3fbdb7105",
-            city: "2",
-            area: "Sector 39",
-            totalRatingsString: "1000+ ratings",
-            cloudinaryImageId: "ge2lzhxpx7izcbpseria",
-            cuisines: [
-                "North Indian"
-            ],
-            tags: [],
-            costForTwo: 29900,
-            costForTwoString: "₹299 FOR TWO",
-            deliveryTime: 35,
-            minDeliveryTime: 35,
-            maxDeliveryTime: 35,
-            slaString: "35 MINS",
-            lastMileTravel: 4,
-            slugs: {
-                restaurant: "chamail-singh-da-dhaba-sohna-road-sohna-road-2",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "1063,	Shop	No	4,	Sector 39,	Vill	Jharsa,	Gurgaon,	Gurgaon	(Haryana),	-	122001",
-            locality: "Jharsa",
-            parentId: 57541,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 4500,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 4500,
-                message: "",
-                title: "Delivery Charge",
-                amount: "4500",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "4 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "40% OFF",
-                subHeader: "UPTO ₹80",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "280771",
-                deliveryTime: 35,
-                minDeliveryTime: 35,
-                maxDeliveryTime: 35,
-                lastMileTravel: 4,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "3.9",
-            totalRatings: 1000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "673318",
-            name: "Bodypower Cafe",
-            uuid: "9b8b341f-95f7-46c5-bdaf-46e926f8f28d",
-            city: "2",
-            area: "sohna road",
-            totalRatingsString: "100+ ratings",
-            cloudinaryImageId: "47bb891185f0b5622306bb08db4de50d",
-            cuisines: [
-                "Pastas",
-                "Indian",
-                "Desserts",
-                "South Indian",
-                "Salads",
-                "Healthy Food",
-                "Pizzas",
-                "Snacks",
-                "Biryani"
-            ],
-            tags: [],
-            costForTwo: 45000,
-            costForTwoString: "₹450 FOR TWO",
-            deliveryTime: 42,
-            minDeliveryTime: 42,
-            maxDeliveryTime: 42,
-            slaString: "42 MINS",
-            lastMileTravel: 6.300000190734863,
-            slugs: {
-                restaurant: "bodypower-cafe-sohna-road-sohna-road",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "AVA Court, Chestnut St, Malibu Town, Sector 47, Gurugram, Haryana 122018, India",
-            locality: "Ava Court",
-            parentId: 280671,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            ribbon: [
-                {
-                    type: "PROMOTED"
-                }
-            ],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 6100,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 6100,
-                message: "",
-                title: "Delivery Charge",
-                amount: "6100",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "cid=6618732~p=7~eid=00000188-70e1-94eb-01c2-62d300b80750",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6.3 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "40% OFF",
-                subHeader: "UPTO ₹200",
-                discountTag: "SAVE BIG",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "673318",
-                deliveryTime: 42,
-                minDeliveryTime: 42,
-                maxDeliveryTime: 42,
-                lastMileTravel: 6.300000190734863,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: true,
-            avgRating: "4.4",
-            totalRatings: 100,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "651214",
-            name: "McDonald's",
-            uuid: "f78bb688-db2e-47a7-94dd-8db3a55f1a48",
-            city: "2",
-            area: "Sector 77",
-            totalRatingsString: "1000+ ratings",
-            cloudinaryImageId: "1293a58ab5610f4c730c3d8cb6ac1b65",
-            cuisines: [
-                "American",
-                "Fast Food"
-            ],
-            tags: [],
-            costForTwo: 40000,
-            costForTwoString: "₹400 FOR TWO",
-            deliveryTime: 35,
-            minDeliveryTime: 35,
-            maxDeliveryTime: 35,
-            slaString: "35 MINS",
-            lastMileTravel: 2.799999952316284,
-            slugs: {
-                restaurant: "mcdonalds-sector-14-sector-14",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "Unit No. SCF -77, Sector 14 Market, HUDA, Gurgaon",
-            locality: "Huda Market",
-            parentId: 630,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 4000,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 4000,
-                message: "",
-                title: "Delivery Charge",
-                amount: "4000",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "2.7 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "651214",
-                deliveryTime: 35,
-                minDeliveryTime: 35,
-                maxDeliveryTime: 35,
-                lastMileTravel: 2.799999952316284,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.0",
-            totalRatings: 1000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "193030",
-            name: "Cake For You",
-            uuid: "10ae6bcc-1b5d-4488-85ac-e9c5a08915b9",
-            city: "2",
-            area: "Sohna Road",
-            totalRatingsString: "1000+ ratings",
-            cloudinaryImageId: "hwd3un4xvcqne7d8onix",
-            cuisines: [
-                "Bakery",
-                "Desserts"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "₹200 FOR TWO",
-            deliveryTime: 36,
-            minDeliveryTime: 36,
-            maxDeliveryTime: 36,
-            slaString: "36 MINS",
-            lastMileTravel: 4.400000095367432,
-            slugs: {
-                restaurant: "cake-for-you.-sohna-road-sohna-road",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "Plot no. 1115, sector 47, opp. More Megastore, near subhash chowk, sohna road, Gurgaon",
-            locality: "Subhash Marg",
-            parentId: 15554,
-            unserviceable: false,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            ribbon: [
-                {
-                    type: "PROMOTED"
-                }
-            ],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 4500,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 4500,
-                message: "",
-                title: "Delivery Charge",
-                amount: "4500",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "cid=6685719~p=10~eid=00000188-70e1-94eb-01c2-62d400b80a49",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "4.4 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "₹150 OFF",
-                subHeader: "ABOVE ₹599",
-                discountTag: "FLAT DEAL",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "193030",
-                deliveryTime: 36,
-                minDeliveryTime: 36,
-                maxDeliveryTime: 36,
-                lastMileTravel: 4.400000095367432,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: true,
-            avgRating: "4.1",
-            totalRatings: 1000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "20138",
-            name: "Harish Bakery",
-            uuid: "5487ac79-0ac8-4e47-820a-c615a44e6354",
-            city: "2",
-            area: "Sadar Bazar",
-            totalRatingsString: "10000+ ratings",
-            cloudinaryImageId: "jkuj5aui7wwmwc0eidog",
-            cuisines: [
-                "North Indian",
-                "South Indian",
-                "Desserts"
-            ],
-            tags: [],
-            costForTwo: 35000,
-            costForTwoString: "₹350 FOR TWO",
-            deliveryTime: 25,
-            minDeliveryTime: 25,
-            maxDeliveryTime: 25,
-            slaString: "25 MINS",
-            lastMileTravel: 0.20000000298023224,
-            slugs: {
-                restaurant: "harish-bakery-old-railway-road-sohna-road",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "sco.1-2&4 jail land complex, Huda Shopping Center, Sohna Chowk, Gurugram-122001",
-            locality: "Huda Shopping Center",
-            parentId: 1676,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 3700,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 3700,
-                message: "",
-                title: "Delivery Charge",
-                amount: "3700",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "0.2 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "20138",
-                deliveryTime: 25,
-                minDeliveryTime: 25,
-                maxDeliveryTime: 25,
-                lastMileTravel: 0.20000000298023224,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.0",
-            totalRatings: 10000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "22349",
-            name: "Dheeraj Vaishno Dhaba",
-            uuid: "13f49d96-5136-4f9f-8662-0a167035fb3c",
-            city: "2",
-            area: "Udyog Vihar",
-            totalRatingsString: "10000+ ratings",
-            cloudinaryImageId: "fimq8qia6d78znvlgugz",
-            cuisines: [
-                "North Indian",
-                "Indian",
-                "Snacks"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "₹200 FOR TWO",
-            deliveryTime: 47,
-            minDeliveryTime: 47,
-            maxDeliveryTime: 47,
-            slaString: "47 MINS",
-            lastMileTravel: 6.300000190734863,
-            slugs: {
-                restaurant: "dheeraj-vaishno-dhaba-palam-vihar-palam-vihar",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "Rao Chattar Singh Market, Opposite Siemens Sarhaul Village, Udyog Vihar, Gurgaon",
-            locality: "Rao Chattar Singh Market",
-            parentId: 72202,
-            unserviceable: false,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 6100,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 6100,
-                message: "",
-                title: "Delivery Charge",
-                amount: "6100",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6.3 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "30% OFF",
-                subHeader: "UPTO ₹75",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "22349",
-                deliveryTime: 47,
-                minDeliveryTime: 47,
-                maxDeliveryTime: 47,
-                lastMileTravel: 6.300000190734863,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "3.9",
-            totalRatings: 10000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "66684",
-            name: "Burgerama",
-            uuid: "68417b43-d89f-4fa0-a19c-e594bf99d0d3",
-            city: "2",
-            area: "Sushant Shopping Arcade",
-            totalRatingsString: "5000+ ratings",
-            cloudinaryImageId: "447000031123d5d8afe27ce7ed6ad556",
-            cuisines: [
-                "American"
-            ],
-            tags: [],
-            costForTwo: 50000,
-            costForTwoString: "₹500 FOR TWO",
-            deliveryTime: 39,
-            minDeliveryTime: 39,
-            maxDeliveryTime: 39,
-            slaString: "39 MINS",
-            lastMileTravel: 7,
-            slugs: {
-                restaurant: "burgerama-sushant-shopping-arcade-dlf-phase-4",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "H 247,UG,Sushant shopping arcade, Gurgaon",
-            locality: "Sushant Lok Phase 1",
-            parentId: 8993,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            ribbon: [
-                {
-                    type: "PROMOTED"
-                }
-            ],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 6900,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 6900,
-                message: "",
-                title: "Delivery Charge",
-                amount: "6900",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "cid=6669443~p=13~eid=00000188-70e1-94eb-01c2-62d500b80d4d",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "7 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "60% OFF",
-                subHeader: "UPTO ₹120",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "66684",
-                deliveryTime: 39,
-                minDeliveryTime: 39,
-                maxDeliveryTime: 39,
-                lastMileTravel: 7,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: true,
-            avgRating: "4.3",
-            totalRatings: 5000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "125878",
-            name: "Burger King",
-            uuid: "36c9ddaf-4e28-421e-98fa-534b984a61f9",
-            city: "2",
-            area: "Sector 4",
-            totalRatingsString: "10000+ ratings",
-            cloudinaryImageId: "e33e1d3ba7d6b2bb0d45e1001b731fcf",
-            cuisines: [
-                "Burgers",
-                "American"
-            ],
-            tags: [],
-            costForTwo: 35000,
-            costForTwoString: "₹350 FOR TWO",
-            deliveryTime: 42,
-            minDeliveryTime: 42,
-            maxDeliveryTime: 42,
-            slaString: "42 MINS",
-            lastMileTravel: 2,
-            slugs: {
-                restaurant: "burger-king-dreamz-mall-old-gurgaon-zone-6",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "UGF-2 & FF-1, GURGAON DREAMZ, SECTOR-4,7 CROSSING OLD RAILWAY ROAD, GURGAON-122001",
-            locality: "Old Railway Road",
-            parentId: 166,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 4000,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 4000,
-                message: "",
-                title: "Delivery Charge",
-                amount: "4000",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "2 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "60% OFF",
-                subHeader: "UPTO ₹120",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "125878",
-                deliveryTime: 42,
-                minDeliveryTime: 42,
-                maxDeliveryTime: 42,
-                lastMileTravel: 2,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.2",
-            totalRatings: 10000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "621165",
-            name: "Bread & Buns - Subs, Sandwich & Burgers",
-            uuid: "40eeeca5-44b1-4c4d-a3f3-efe6db7aa6ef",
-            city: "2",
-            area: "Sector 12",
-            totalRatingsString: "20+ ratings",
-            cloudinaryImageId: "f0ae604b43a5e098a98b5eb762504137",
-            cuisines: [
-                "American",
-                "Fast Food",
-                "Healthy Food",
-                "Beverages",
-                "Snacks"
-            ],
-            tags: [],
-            costForTwo: 30000,
-            costForTwoString: "₹300 FOR TWO",
-            deliveryTime: 42,
-            minDeliveryTime: 42,
-            maxDeliveryTime: 42,
-            slaString: "42 MINS",
-            lastMileTravel: 1.899999976158142,
-            slugs: {
-                restaurant: "bread-&-buns-old-gurgaon-(zone-6)-old-gurgaon-(zone-6)",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "SCO-25 Urban Estate, Sector 12A, Near axis bank, Sector 12, Gurugram, Haryana 122001, India",
-            locality: "Urban Estate",
-            parentId: 369277,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            ribbon: [
-                {
-                    type: "PROMOTED"
-                }
-            ],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 3700,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 3700,
-                message: "",
-                title: "Delivery Charge",
-                amount: "3700",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "cid=6812283~p=16~eid=00000188-70e1-94eb-01c2-62d600b81023",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "1.8 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "40% OFF",
-                subHeader: "UPTO ₹80",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "621165",
-                deliveryTime: 42,
-                minDeliveryTime: 42,
-                maxDeliveryTime: 42,
-                lastMileTravel: 1.899999976158142,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: true,
-            avgRating: "4.2",
-            totalRatings: 20,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "154653",
-            name: "Jagdish Vaishno Dhaba",
-            uuid: "a783085e-830a-4a33-8831-1274bd944def",
-            city: "2",
-            area: "Old Railway Road",
-            totalRatingsString: "10000+ ratings",
-            cloudinaryImageId: "seyuhw8itjtlmvm7wscy",
-            cuisines: [
-                "Indian",
-                "North Indian",
-                "Biryani",
-                "Tandoor",
-                "Punjabi"
-            ],
-            tags: [],
-            costForTwo: 25000,
-            costForTwoString: "₹250 FOR TWO",
-            deliveryTime: 24,
-            minDeliveryTime: 24,
-            maxDeliveryTime: 24,
-            slaString: "24 MINS",
-            lastMileTravel: 2,
-            slugs: {
-                restaurant: "jagdish-vaishno-dhaba-old-gurgaon-zone-6",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "JAGDISH VAISHNO DHABA OPP Gurgaon Dreams Mall ",
-            locality: "Sector 4",
-            parentId: 15300,
-            unserviceable: false,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 3700,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 3700,
-                message: "",
-                title: "Delivery Charge",
-                amount: "3700",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "2 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "10% OFF",
-                subHeader: "UPTO ₹40",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "154653",
-                deliveryTime: 24,
-                minDeliveryTime: 24,
-                maxDeliveryTime: 24,
-                lastMileTravel: 2,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.1",
-            totalRatings: 10000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "240798",
-            name: "Dawat Bakery",
-            uuid: "3e41e771-0870-441e-91d4-989af77122fb",
-            city: "2",
-            area: "Sohna Road",
-            totalRatingsString: "500+ ratings",
-            cloudinaryImageId: "4a4b70f9afa67dbabface7daf9486e2b",
-            cuisines: [
-                "Indian"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "₹200 FOR TWO",
-            deliveryTime: 39,
-            minDeliveryTime: 39,
-            maxDeliveryTime: 39,
-            slaString: "39 MINS",
-            lastMileTravel: 4.400000095367432,
-            slugs: {
-                restaurant: "dawat-bakery-sohna-road-sohna-road",
-                city: "gurgaon"
-            },
-            cityState: "2",
-            address: "1115, sector 47, near Subash chowk, Sohna road, Gurgaon",
-            locality: "Sector 47",
-            parentId: 68867,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            ribbon: [
-                {
-                    type: "PROMOTED"
-                }
-            ],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 4500,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 4500,
-                message: "",
-                title: "Delivery Charge",
-                amount: "4500",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "cid=6685722~p=19~eid=00000188-70e1-94eb-01c2-62d700b8134a",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "4.4 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "₹150 OFF",
-                subHeader: "ABOVE ₹599",
-                discountTag: "FLAT DEAL",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "240798",
-                deliveryTime: 39,
-                minDeliveryTime: 39,
-                maxDeliveryTime: 39,
-                lastMileTravel: 4.400000095367432,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: true,
-            avgRating: "4.3",
-            totalRatings: 500,
-            new: false
-        },
-        subtype: "basic"
-    }
-];
-// creating card
-const RestaurantCard = ({ name , cuisines , cloudinaryImageId , totalRatingsString  })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card-image",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId
-                }, void 0, false, {
-                    fileName: "src/app.js",
-                    lineNumber: 1492,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/app.js",
-                lineNumber: 1491,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "cardinfo",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "restro-name",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                            children: name
-                        }, void 0, false, {
-                            fileName: "src/app.js",
-                            lineNumber: 1496,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/app.js",
-                        lineNumber: 1495,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "restro-type",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: cuisines.join(",")
-                            }, void 0, false, {
-                                fileName: "src/app.js",
-                                lineNumber: 1499,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: totalRatingsString
-                            }, void 0, false, {
-                                fileName: "src/app.js",
-                                lineNumber: 1500,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/app.js",
-                        lineNumber: 1498,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/app.js",
-                lineNumber: 1494,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/app.js",
-        lineNumber: 1490,
-        columnNumber: 10
-    }, undefined);
-};
-_c2 = RestaurantCard;
-//Rendering multiple cares in the body
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card-container",
-        children: restraunList.map((restaurant)=>{
-            return /*#__PURE__*/ (0, _react.createElement)(RestaurantCard, {
-                ...restaurant.data,
-                key: restaurant.data.id,
-                __source: {
-                    fileName: "src/app.js",
-                    lineNumber: 1519,
-                    columnNumber: 14
-                },
-                __self: undefined
-            });
-        })
-    }, void 0, false, {
-        fileName: "src/app.js",
-        lineNumber: 1508,
-        columnNumber: 10
-    }, undefined);
-};
-_c3 = Body;
-const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: "footer"
-    }, void 0, false, {
-        fileName: "src/app.js",
-        lineNumber: 1524,
-        columnNumber: 10
-    }, undefined);
-};
-_c4 = Footer;
+var _header = require("./components/header");
+var _footer = require("./components/footer");
+var _body = require("./components/Body");
 const AppLayout = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _header.Header), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 1527,
+                lineNumber: 7,
                 columnNumber: 5
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _body.Body), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 1528,
+                lineNumber: 8,
                 columnNumber: 5
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footer.Footer), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 1529,
+                lineNumber: 9,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true);
-_c5 = AppLayout;
+_c = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "src/app.js",
-    lineNumber: 1532,
+    lineNumber: 12,
     columnNumber: 13
 }, undefined));
-var _c, _c1, _c2, _c3, _c4, _c5;
-$RefreshReg$(_c, "Title");
-$RefreshReg$(_c1, "Header");
-$RefreshReg$(_c2, "RestaurantCard");
-$RefreshReg$(_c3, "Body");
-$RefreshReg$(_c4, "Footer");
-$RefreshReg$(_c5, "AppLayout");
+var _c;
+$RefreshReg$(_c, "AppLayout");
 
   $parcel$ReactRefreshHelpers$f79a.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/header":"aorvA","./components/footer":"bjsug","./components/Body":"8yaV8"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -29132,6 +27337,2166 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}]},["hklly","1xC6H","bNKaB"], "bNKaB", "parcelRequire7c38")
+},{"7422ead32dcc1e6b":"786KC"}],"aorvA":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7672 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7672.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Header", ()=>Header);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+const loggedInUser = ()=>{
+    return true;
+};
+const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+        href: "/",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            alt: "logo",
+            className: "logo",
+            src: "https://cdn.dribbble.com/users/296356/screenshots/10594761/eatfit_brand_logo-02.jpg"
+        }, void 0, false, {
+            fileName: "src/components/header.js",
+            lineNumber: 6,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/header.js",
+        lineNumber: 5,
+        columnNumber: 21
+    }, undefined);
+_c = Title;
+const Header = ()=>{
+    _s();
+    const [isLoggedIn, setLoggedIn] = (0, _react.useState)(false);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
+        children: [
+            Title(),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-items",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "src/components/header.js",
+                            lineNumber: 14,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "About"
+                        }, void 0, false, {
+                            fileName: "src/components/header.js",
+                            lineNumber: 15,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Contact"
+                        }, void 0, false, {
+                            fileName: "src/components/header.js",
+                            lineNumber: 16,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "src/components/header.js",
+                            lineNumber: 17,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/header.js",
+                    lineNumber: 13,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/header.js",
+                lineNumber: 12,
+                columnNumber: 7
+            }, undefined),
+            isLoggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setLoggedIn(false),
+                children: "Logout"
+            }, void 0, false, {
+                fileName: "src/components/header.js",
+                lineNumber: 20,
+                columnNumber: 21
+            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setLoggedIn(true),
+                children: "Login"
+            }, void 0, false, {
+                fileName: "src/components/header.js",
+                lineNumber: 20,
+                columnNumber: 82
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/header.js",
+        lineNumber: 10,
+        columnNumber: 10
+    }, undefined);
+};
+_s(Header, "9ogPs/qKjoLSy/tthqIGD5LodSI=");
+_c1 = Header;
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "Header");
+
+  $parcel$ReactRefreshHelpers$7672.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"bjsug":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f161 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f161.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Footer", ()=>Footer);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "footer"
+    }, void 0, false, {
+        fileName: "src/components/footer.js",
+        lineNumber: 2,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Footer;
+var _c;
+$RefreshReg$(_c, "Footer");
+
+  $parcel$ReactRefreshHelpers$f161.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8yaV8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0606.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Body", ()=>Body);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _constant = require("../constant");
+var _restraurantCard = require("./RestraurantCard");
+var _shimmer = require("./shimmer");
+var _skeletonElement = require("./skeletons/skeletonElement");
+var _skeletonImage = require("./skeletons/skeletonImage");
+var _s = $RefreshSig$();
+function filterData(searchText, restaurants) {
+    return restaurants.filter((restaurant)=>restaurant?.data?.name?.toLowerCase()?.includes(searchText.toLowerCase()));
+}
+const Body = ()=>{
+    _s();
+    const [searchText, setSearchText] = (0, _react.useState)("");
+    const [allRestaurants, setAllRestaurants] = (0, _react.useState)([]);
+    const [filterRestaurants, setFilterRestaurants] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        getRestaurants();
+    }, []);
+    async function getRestaurants() {
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.4594965&lng=77.0266383&page_type=DESKTOP_WEB_LISTING");
+        const json = await data.json();
+        setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+        setFilterRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+    }
+    if (allRestaurants?.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonImage.SkeletonImage), {}, void 0, false, {
+        fileName: "src/components/Body.js",
+        lineNumber: 23,
+        columnNumber: 44
+    }, undefined);
+    if (filterRestaurants?.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "No restaurant found"
+    }, void 0, false, {
+        fileName: "src/components/Body.js",
+        lineNumber: 25,
+        columnNumber: 12
+    }, undefined);
+    return allRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmer.Shimmer), {}, void 0, false, {
+        fileName: "src/components/Body.js",
+        lineNumber: 27,
+        columnNumber: 40
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        className: "search-input",
+                        type: "text",
+                        placeholder: "search",
+                        value: searchText,
+                        onChange: (e)=>{
+                            setSearchText(e.target.value);
+                        }
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 29,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "search-button",
+                        onClick: ()=>{
+                            const data = filterData(searchText, allRestaurants);
+                            setFilterRestaurants(data);
+                        },
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Body.js",
+                lineNumber: 28,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card-container",
+                children: filterRestaurants.map((restaurant)=>{
+                    return /*#__PURE__*/ (0, _react.createElement)((0, _restraurantCard.RestaurantCard), {
+                        ...restaurant.data,
+                        key: restaurant.data.id,
+                        __source: {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 42,
+                            columnNumber: 16
+                        },
+                        __self: undefined
+                    });
+                })
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 40,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_s(Body, "KyLaqL+wgb86KsLHp0/fN/NcQwY=");
+_c = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$0606.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../constant":"jVIFP","./RestraurantCard":"7wtFA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./shimmer":"fWXGy","./skeletons/skeletonElement":"kRJt8","./skeletons/skeletonImage":"60hMc"}],"jVIFP":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "url", ()=>url);
+parcelHelpers.export(exports, "restraunList", ()=>restraunList);
+const url = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+const restraunList = [
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "641414",
+            name: "Baker By Chance",
+            uuid: "e645df5c-015d-45b5-8c84-9bee2d8d1b12",
+            city: "2",
+            area: "Sector 31",
+            totalRatingsString: "100+ ratings",
+            cloudinaryImageId: "7c8afd5bfcaccccf6a7ec7cc7431cb2e",
+            cuisines: [
+                "Bakery",
+                "Desserts"
+            ],
+            tags: [],
+            costForTwo: 50000,
+            costForTwoString: "₹500 FOR TWO",
+            deliveryTime: 28,
+            minDeliveryTime: 28,
+            maxDeliveryTime: 28,
+            slaString: "28 MINS",
+            lastMileTravel: 3.5,
+            slugs: {
+                restaurant: "baker-by-chance-huda-city-huda-city",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "Booth No-176,Huda Market,Sector-31,Gurugram, Gurgaon, Gurugram, Haryana-122003",
+            locality: "Huda Market",
+            parentId: 313023,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            ribbon: [
+                {
+                    type: "PROMOTED"
+                }
+            ],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 4500,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 4500,
+                message: "",
+                title: "Delivery Charge",
+                amount: "4500",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "cid=6893073~p=1~eid=00000188-70e1-94eb-01c2-62d100b80109",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "3.5 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "50% OFF",
+                subHeader: "UPTO ₹100",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "641414",
+                deliveryTime: 28,
+                minDeliveryTime: 28,
+                maxDeliveryTime: 28,
+                lastMileTravel: 3.5,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: true,
+            avgRating: "4.2",
+            totalRatings: 100,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "448934",
+            name: "Shama Chicken Corner",
+            uuid: "1d7ddf30-d631-4cb2-8a90-38d4c7727968",
+            city: "2",
+            area: "Sector 13",
+            totalRatingsString: "100+ ratings",
+            cloudinaryImageId: "rthhvapj5myydhvg0wrj",
+            cuisines: [
+                "Biryani",
+                "North Indian",
+                "Beverages"
+            ],
+            tags: [],
+            costForTwo: 30000,
+            costForTwoString: "₹300 FOR TWO",
+            deliveryTime: 29,
+            minDeliveryTime: 29,
+            maxDeliveryTime: 29,
+            slaString: "29 MINS",
+            lastMileTravel: 2.200000047683716,
+            slugs: {
+                restaurant: "shama-chicken-corner-old-gurgaon-(zone-6)-old-gurgaon-(zone-6)",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "shop no. - 03,13 Rajiv  Nagar sector-13  Gurgaon-122001,  Basai((50), Gurgaon,  Gurugram, Haryana -  122001",
+            locality: "Rajiv Nagar",
+            parentId: 13769,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 3700,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 3700,
+                message: "",
+                title: "Delivery Charge",
+                amount: "3700",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "2.2 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "15% OFF",
+                subHeader: "UPTO ₹45",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "448934",
+                deliveryTime: 29,
+                minDeliveryTime: 29,
+                maxDeliveryTime: 29,
+                lastMileTravel: 2.200000047683716,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "3.7",
+            totalRatings: 100,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "56478",
+            name: "Om Sweets & Snacks (Sector 8)",
+            uuid: "a5493bd8-7328-438c-9b43-87c413bedef9",
+            city: "2",
+            area: "Sector 8",
+            totalRatingsString: "10000+ ratings",
+            cloudinaryImageId: "bztjesdzq7j9fmji3zv6",
+            cuisines: [
+                "Sweets",
+                "North Indian",
+                "South Indian",
+                "Chinese",
+                "Snacks",
+                "Desserts",
+                "Bakery"
+            ],
+            tags: [],
+            costForTwo: 40000,
+            costForTwoString: "₹400 FOR TWO",
+            deliveryTime: 30,
+            minDeliveryTime: 30,
+            maxDeliveryTime: 30,
+            slaString: "30 MINS",
+            lastMileTravel: 0.800000011920929,
+            slugs: {
+                restaurant: "om-sweets-snacks-sector-8-old-gurgaon-zone-6",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "Opposite Water Tank, Arjun Nagar, Sector 8, Gurgaon",
+            locality: "Arjun Nagar",
+            parentId: 676,
+            unserviceable: false,
+            veg: true,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 3700,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 3700,
+                message: "",
+                title: "Delivery Charge",
+                amount: "3700",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "0.8 kms",
+            hasSurge: false,
+            sla: {
+                restaurantId: "56478",
+                deliveryTime: 30,
+                minDeliveryTime: 30,
+                maxDeliveryTime: 30,
+                lastMileTravel: 0.800000011920929,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "4.3",
+            totalRatings: 10000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "509144",
+            name: "Imperfecto Patio",
+            uuid: "a8dd1f29-2a6c-4b95-938e-fbfb0a9c6e07",
+            city: "2",
+            area: "M2K Corporate Park",
+            totalRatingsString: "1000+ ratings",
+            cloudinaryImageId: "zsxafggjjndgrh5d0jzz",
+            cuisines: [
+                "Indian"
+            ],
+            tags: [],
+            costForTwo: 30000,
+            costForTwoString: "₹300 FOR TWO",
+            deliveryTime: 40,
+            minDeliveryTime: 40,
+            maxDeliveryTime: 40,
+            slaString: "40 MINS",
+            lastMileTravel: 5,
+            slugs: {
+                restaurant: "imperfecto-patio-jalvayu-towers-jalvayu-towers",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "M2K, Corporate Park Block N, Mayfield Garden, Sector 51 Gurgaon.122003",
+            locality: "Sector 51",
+            parentId: 239216,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            ribbon: [
+                {
+                    type: "PROMOTED"
+                }
+            ],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 5300,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 5300,
+                message: "",
+                title: "Delivery Charge",
+                amount: "5300",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "cid=6669982~p=4~eid=00000188-70e1-94eb-01c2-62d200b80439",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "5 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "₹200 OFF",
+                subHeader: "ABOVE ₹599",
+                discountTag: "FLAT DEAL",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "509144",
+                deliveryTime: 40,
+                minDeliveryTime: 40,
+                maxDeliveryTime: 40,
+                lastMileTravel: 5,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: true,
+            avgRating: "4.1",
+            totalRatings: 1000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "280771",
+            name: "CHAMAIL SINGH DA DHABA",
+            uuid: "5252be69-c407-4777-a241-d1e3fbdb7105",
+            city: "2",
+            area: "Sector 39",
+            totalRatingsString: "1000+ ratings",
+            cloudinaryImageId: "ge2lzhxpx7izcbpseria",
+            cuisines: [
+                "North Indian"
+            ],
+            tags: [],
+            costForTwo: 29900,
+            costForTwoString: "₹299 FOR TWO",
+            deliveryTime: 35,
+            minDeliveryTime: 35,
+            maxDeliveryTime: 35,
+            slaString: "35 MINS",
+            lastMileTravel: 4,
+            slugs: {
+                restaurant: "chamail-singh-da-dhaba-sohna-road-sohna-road-2",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "1063,	Shop	No	4,	Sector 39,	Vill	Jharsa,	Gurgaon,	Gurgaon	(Haryana),	-	122001",
+            locality: "Jharsa",
+            parentId: 57541,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 4500,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 4500,
+                message: "",
+                title: "Delivery Charge",
+                amount: "4500",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "4 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "40% OFF",
+                subHeader: "UPTO ₹80",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "280771",
+                deliveryTime: 35,
+                minDeliveryTime: 35,
+                maxDeliveryTime: 35,
+                lastMileTravel: 4,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "3.9",
+            totalRatings: 1000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "673318",
+            name: "Bodypower Cafe",
+            uuid: "9b8b341f-95f7-46c5-bdaf-46e926f8f28d",
+            city: "2",
+            area: "sohna road",
+            totalRatingsString: "100+ ratings",
+            cloudinaryImageId: "47bb891185f0b5622306bb08db4de50d",
+            cuisines: [
+                "Pastas",
+                "Indian",
+                "Desserts",
+                "South Indian",
+                "Salads",
+                "Healthy Food",
+                "Pizzas",
+                "Snacks",
+                "Biryani"
+            ],
+            tags: [],
+            costForTwo: 45000,
+            costForTwoString: "₹450 FOR TWO",
+            deliveryTime: 42,
+            minDeliveryTime: 42,
+            maxDeliveryTime: 42,
+            slaString: "42 MINS",
+            lastMileTravel: 6.300000190734863,
+            slugs: {
+                restaurant: "bodypower-cafe-sohna-road-sohna-road",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "AVA Court, Chestnut St, Malibu Town, Sector 47, Gurugram, Haryana 122018, India",
+            locality: "Ava Court",
+            parentId: 280671,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            ribbon: [
+                {
+                    type: "PROMOTED"
+                }
+            ],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 6100,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 6100,
+                message: "",
+                title: "Delivery Charge",
+                amount: "6100",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "cid=6618732~p=7~eid=00000188-70e1-94eb-01c2-62d300b80750",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "6.3 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "40% OFF",
+                subHeader: "UPTO ₹200",
+                discountTag: "SAVE BIG",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "673318",
+                deliveryTime: 42,
+                minDeliveryTime: 42,
+                maxDeliveryTime: 42,
+                lastMileTravel: 6.300000190734863,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: true,
+            avgRating: "4.4",
+            totalRatings: 100,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "651214",
+            name: "McDonald's",
+            uuid: "f78bb688-db2e-47a7-94dd-8db3a55f1a48",
+            city: "2",
+            area: "Sector 77",
+            totalRatingsString: "1000+ ratings",
+            cloudinaryImageId: "1293a58ab5610f4c730c3d8cb6ac1b65",
+            cuisines: [
+                "American",
+                "Fast Food"
+            ],
+            tags: [],
+            costForTwo: 40000,
+            costForTwoString: "₹400 FOR TWO",
+            deliveryTime: 35,
+            minDeliveryTime: 35,
+            maxDeliveryTime: 35,
+            slaString: "35 MINS",
+            lastMileTravel: 2.799999952316284,
+            slugs: {
+                restaurant: "mcdonalds-sector-14-sector-14",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "Unit No. SCF -77, Sector 14 Market, HUDA, Gurgaon",
+            locality: "Huda Market",
+            parentId: 630,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 4000,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 4000,
+                message: "",
+                title: "Delivery Charge",
+                amount: "4000",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "2.7 kms",
+            hasSurge: false,
+            sla: {
+                restaurantId: "651214",
+                deliveryTime: 35,
+                minDeliveryTime: 35,
+                maxDeliveryTime: 35,
+                lastMileTravel: 2.799999952316284,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "4.0",
+            totalRatings: 1000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "193030",
+            name: "Cake For You",
+            uuid: "10ae6bcc-1b5d-4488-85ac-e9c5a08915b9",
+            city: "2",
+            area: "Sohna Road",
+            totalRatingsString: "1000+ ratings",
+            cloudinaryImageId: "hwd3un4xvcqne7d8onix",
+            cuisines: [
+                "Bakery",
+                "Desserts"
+            ],
+            tags: [],
+            costForTwo: 20000,
+            costForTwoString: "₹200 FOR TWO",
+            deliveryTime: 36,
+            minDeliveryTime: 36,
+            maxDeliveryTime: 36,
+            slaString: "36 MINS",
+            lastMileTravel: 4.400000095367432,
+            slugs: {
+                restaurant: "cake-for-you.-sohna-road-sohna-road",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "Plot no. 1115, sector 47, opp. More Megastore, near subhash chowk, sohna road, Gurgaon",
+            locality: "Subhash Marg",
+            parentId: 15554,
+            unserviceable: false,
+            veg: true,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            ribbon: [
+                {
+                    type: "PROMOTED"
+                }
+            ],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 4500,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 4500,
+                message: "",
+                title: "Delivery Charge",
+                amount: "4500",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "cid=6685719~p=10~eid=00000188-70e1-94eb-01c2-62d400b80a49",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "4.4 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "₹150 OFF",
+                subHeader: "ABOVE ₹599",
+                discountTag: "FLAT DEAL",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "193030",
+                deliveryTime: 36,
+                minDeliveryTime: 36,
+                maxDeliveryTime: 36,
+                lastMileTravel: 4.400000095367432,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: true,
+            avgRating: "4.1",
+            totalRatings: 1000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "20138",
+            name: "Harish Bakery",
+            uuid: "5487ac79-0ac8-4e47-820a-c615a44e6354",
+            city: "2",
+            area: "Sadar Bazar",
+            totalRatingsString: "10000+ ratings",
+            cloudinaryImageId: "jkuj5aui7wwmwc0eidog",
+            cuisines: [
+                "North Indian",
+                "South Indian",
+                "Desserts"
+            ],
+            tags: [],
+            costForTwo: 35000,
+            costForTwoString: "₹350 FOR TWO",
+            deliveryTime: 25,
+            minDeliveryTime: 25,
+            maxDeliveryTime: 25,
+            slaString: "25 MINS",
+            lastMileTravel: 0.20000000298023224,
+            slugs: {
+                restaurant: "harish-bakery-old-railway-road-sohna-road",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "sco.1-2&4 jail land complex, Huda Shopping Center, Sohna Chowk, Gurugram-122001",
+            locality: "Huda Shopping Center",
+            parentId: 1676,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 3700,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 3700,
+                message: "",
+                title: "Delivery Charge",
+                amount: "3700",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "0.2 kms",
+            hasSurge: false,
+            sla: {
+                restaurantId: "20138",
+                deliveryTime: 25,
+                minDeliveryTime: 25,
+                maxDeliveryTime: 25,
+                lastMileTravel: 0.20000000298023224,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "4.0",
+            totalRatings: 10000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "22349",
+            name: "Dheeraj Vaishno Dhaba",
+            uuid: "13f49d96-5136-4f9f-8662-0a167035fb3c",
+            city: "2",
+            area: "Udyog Vihar",
+            totalRatingsString: "10000+ ratings",
+            cloudinaryImageId: "fimq8qia6d78znvlgugz",
+            cuisines: [
+                "North Indian",
+                "Indian",
+                "Snacks"
+            ],
+            tags: [],
+            costForTwo: 20000,
+            costForTwoString: "₹200 FOR TWO",
+            deliveryTime: 47,
+            minDeliveryTime: 47,
+            maxDeliveryTime: 47,
+            slaString: "47 MINS",
+            lastMileTravel: 6.300000190734863,
+            slugs: {
+                restaurant: "dheeraj-vaishno-dhaba-palam-vihar-palam-vihar",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "Rao Chattar Singh Market, Opposite Siemens Sarhaul Village, Udyog Vihar, Gurgaon",
+            locality: "Rao Chattar Singh Market",
+            parentId: 72202,
+            unserviceable: false,
+            veg: true,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 6100,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 6100,
+                message: "",
+                title: "Delivery Charge",
+                amount: "6100",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "6.3 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "30% OFF",
+                subHeader: "UPTO ₹75",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "22349",
+                deliveryTime: 47,
+                minDeliveryTime: 47,
+                maxDeliveryTime: 47,
+                lastMileTravel: 6.300000190734863,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "3.9",
+            totalRatings: 10000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "66684",
+            name: "Burgerama",
+            uuid: "68417b43-d89f-4fa0-a19c-e594bf99d0d3",
+            city: "2",
+            area: "Sushant Shopping Arcade",
+            totalRatingsString: "5000+ ratings",
+            cloudinaryImageId: "447000031123d5d8afe27ce7ed6ad556",
+            cuisines: [
+                "American"
+            ],
+            tags: [],
+            costForTwo: 50000,
+            costForTwoString: "₹500 FOR TWO",
+            deliveryTime: 39,
+            minDeliveryTime: 39,
+            maxDeliveryTime: 39,
+            slaString: "39 MINS",
+            lastMileTravel: 7,
+            slugs: {
+                restaurant: "burgerama-sushant-shopping-arcade-dlf-phase-4",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "H 247,UG,Sushant shopping arcade, Gurgaon",
+            locality: "Sushant Lok Phase 1",
+            parentId: 8993,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            ribbon: [
+                {
+                    type: "PROMOTED"
+                }
+            ],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 6900,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 6900,
+                message: "",
+                title: "Delivery Charge",
+                amount: "6900",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "cid=6669443~p=13~eid=00000188-70e1-94eb-01c2-62d500b80d4d",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "7 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "60% OFF",
+                subHeader: "UPTO ₹120",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "66684",
+                deliveryTime: 39,
+                minDeliveryTime: 39,
+                maxDeliveryTime: 39,
+                lastMileTravel: 7,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: true,
+            avgRating: "4.3",
+            totalRatings: 5000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "125878",
+            name: "Burger King",
+            uuid: "36c9ddaf-4e28-421e-98fa-534b984a61f9",
+            city: "2",
+            area: "Sector 4",
+            totalRatingsString: "10000+ ratings",
+            cloudinaryImageId: "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+            cuisines: [
+                "Burgers",
+                "American"
+            ],
+            tags: [],
+            costForTwo: 35000,
+            costForTwoString: "₹350 FOR TWO",
+            deliveryTime: 42,
+            minDeliveryTime: 42,
+            maxDeliveryTime: 42,
+            slaString: "42 MINS",
+            lastMileTravel: 2,
+            slugs: {
+                restaurant: "burger-king-dreamz-mall-old-gurgaon-zone-6",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "UGF-2 & FF-1, GURGAON DREAMZ, SECTOR-4,7 CROSSING OLD RAILWAY ROAD, GURGAON-122001",
+            locality: "Old Railway Road",
+            parentId: 166,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 4000,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 4000,
+                message: "",
+                title: "Delivery Charge",
+                amount: "4000",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "2 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "60% OFF",
+                subHeader: "UPTO ₹120",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "125878",
+                deliveryTime: 42,
+                minDeliveryTime: 42,
+                maxDeliveryTime: 42,
+                lastMileTravel: 2,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "4.2",
+            totalRatings: 10000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "621165",
+            name: "Bread & Buns - Subs, Sandwich & Burgers",
+            uuid: "40eeeca5-44b1-4c4d-a3f3-efe6db7aa6ef",
+            city: "2",
+            area: "Sector 12",
+            totalRatingsString: "20+ ratings",
+            cloudinaryImageId: "f0ae604b43a5e098a98b5eb762504137",
+            cuisines: [
+                "American",
+                "Fast Food",
+                "Healthy Food",
+                "Beverages",
+                "Snacks"
+            ],
+            tags: [],
+            costForTwo: 30000,
+            costForTwoString: "₹300 FOR TWO",
+            deliveryTime: 42,
+            minDeliveryTime: 42,
+            maxDeliveryTime: 42,
+            slaString: "42 MINS",
+            lastMileTravel: 1.899999976158142,
+            slugs: {
+                restaurant: "bread-&-buns-old-gurgaon-(zone-6)-old-gurgaon-(zone-6)",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "SCO-25 Urban Estate, Sector 12A, Near axis bank, Sector 12, Gurugram, Haryana 122001, India",
+            locality: "Urban Estate",
+            parentId: 369277,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            ribbon: [
+                {
+                    type: "PROMOTED"
+                }
+            ],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 3700,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 3700,
+                message: "",
+                title: "Delivery Charge",
+                amount: "3700",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "cid=6812283~p=16~eid=00000188-70e1-94eb-01c2-62d600b81023",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "1.8 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "40% OFF",
+                subHeader: "UPTO ₹80",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "621165",
+                deliveryTime: 42,
+                minDeliveryTime: 42,
+                maxDeliveryTime: 42,
+                lastMileTravel: 1.899999976158142,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: true,
+            avgRating: "4.2",
+            totalRatings: 20,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "154653",
+            name: "Jagdish Vaishno Dhaba",
+            uuid: "a783085e-830a-4a33-8831-1274bd944def",
+            city: "2",
+            area: "Old Railway Road",
+            totalRatingsString: "10000+ ratings",
+            cloudinaryImageId: "seyuhw8itjtlmvm7wscy",
+            cuisines: [
+                "Indian",
+                "North Indian",
+                "Biryani",
+                "Tandoor",
+                "Punjabi"
+            ],
+            tags: [],
+            costForTwo: 25000,
+            costForTwoString: "₹250 FOR TWO",
+            deliveryTime: 24,
+            minDeliveryTime: 24,
+            maxDeliveryTime: 24,
+            slaString: "24 MINS",
+            lastMileTravel: 2,
+            slugs: {
+                restaurant: "jagdish-vaishno-dhaba-old-gurgaon-zone-6",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "JAGDISH VAISHNO DHABA OPP Gurgaon Dreams Mall ",
+            locality: "Sector 4",
+            parentId: 15300,
+            unserviceable: false,
+            veg: true,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 3700,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 3700,
+                message: "",
+                title: "Delivery Charge",
+                amount: "3700",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "2 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "10% OFF",
+                subHeader: "UPTO ₹40",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "154653",
+                deliveryTime: 24,
+                minDeliveryTime: 24,
+                maxDeliveryTime: 24,
+                lastMileTravel: 2,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "4.1",
+            totalRatings: 10000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "240798",
+            name: "Dawat Bakery",
+            uuid: "3e41e771-0870-441e-91d4-989af77122fb",
+            city: "2",
+            area: "Sohna Road",
+            totalRatingsString: "500+ ratings",
+            cloudinaryImageId: "4a4b70f9afa67dbabface7daf9486e2b",
+            cuisines: [
+                "Indian"
+            ],
+            tags: [],
+            costForTwo: 20000,
+            costForTwoString: "₹200 FOR TWO",
+            deliveryTime: 39,
+            minDeliveryTime: 39,
+            maxDeliveryTime: 39,
+            slaString: "39 MINS",
+            lastMileTravel: 4.400000095367432,
+            slugs: {
+                restaurant: "dawat-bakery-sohna-road-sohna-road",
+                city: "gurgaon"
+            },
+            cityState: "2",
+            address: "1115, sector 47, near Subash chowk, Sohna road, Gurgaon",
+            locality: "Sector 47",
+            parentId: 68867,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            ribbon: [
+                {
+                    type: "PROMOTED"
+                }
+            ],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 4500,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 4500,
+                message: "",
+                title: "Delivery Charge",
+                amount: "4500",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "cid=6685722~p=19~eid=00000188-70e1-94eb-01c2-62d700b8134a",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "4.4 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "₹150 OFF",
+                subHeader: "ABOVE ₹599",
+                discountTag: "FLAT DEAL",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "240798",
+                deliveryTime: 39,
+                minDeliveryTime: 39,
+                maxDeliveryTime: 39,
+                lastMileTravel: 4.400000095367432,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: true,
+            avgRating: "4.3",
+            totalRatings: 500,
+            new: false
+        },
+        subtype: "basic"
+    }
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7wtFA":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b59b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b59b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "RestaurantCard", ()=>RestaurantCard);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constant = require("../constant");
+const RestaurantCard = ({ name , cuisines , cloudinaryImageId , totalRatingsString  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card-image",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _constant.url) + cloudinaryImageId
+                }, void 0, false, {
+                    fileName: "src/components/RestraurantCard.js",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/RestraurantCard.js",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "cardinfo",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "restro-name",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: name
+                        }, void 0, false, {
+                            fileName: "src/components/RestraurantCard.js",
+                            lineNumber: 14,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/RestraurantCard.js",
+                        lineNumber: 13,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "restro-type",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                children: cuisines.slice(0, 2).join(",")
+                            }, void 0, false, {
+                                fileName: "src/components/RestraurantCard.js",
+                                lineNumber: 17,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                children: totalRatingsString
+                            }, void 0, false, {
+                                fileName: "src/components/RestraurantCard.js",
+                                lineNumber: 18,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/RestraurantCard.js",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestraurantCard.js",
+                lineNumber: 12,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/RestraurantCard.js",
+        lineNumber: 8,
+        columnNumber: 10
+    }, undefined);
+};
+_c = RestaurantCard;
+var _c;
+$RefreshReg$(_c, "RestaurantCard");
+
+  $parcel$ReactRefreshHelpers$b59b.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../constant":"jVIFP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fWXGy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$79c2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$79c2.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Shimmer", ()=>Shimmer);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Shimmer ui loading"
+    }, void 0, false, {
+        fileName: "src/components/shimmer.js",
+        lineNumber: 2,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$79c2.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kRJt8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f65e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f65e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SkeletonElement", ()=>SkeletonElement);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _skeletonCss = require("./skeleton.css");
+const SkeletonElement = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "squre-container",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "skeleton square"
+                }, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonElement.js",
+                    lineNumber: 6,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "skeleton textl"
+                }, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonElement.js",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "skeleton texts"
+                }, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonElement.js",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/skeletons/skeletonElement.js",
+            lineNumber: 5,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
+};
+_c = SkeletonElement;
+var _c;
+$RefreshReg$(_c, "SkeletonElement");
+
+  $parcel$ReactRefreshHelpers$f65e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./skeleton.css":"9GCbi"}],"9GCbi":[function() {},{}],"60hMc":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$46ed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$46ed.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SkeletonImage", ()=>SkeletonImage);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _skeletonElement = require("./skeletonElement");
+const SkeletonImage = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "skeleton-wrapper",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "skeleton-square",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 6,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 13,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 16,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 17,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 18,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 19,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonElement.SkeletonElement), {}, void 0, false, {
+                    fileName: "src/components/skeletons/skeletonImage.js",
+                    lineNumber: 20,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/skeletons/skeletonImage.js",
+            lineNumber: 5,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/skeletons/skeletonImage.js",
+        lineNumber: 4,
+        columnNumber: 10
+    }, undefined);
+};
+_c = SkeletonImage;
+var _c;
+$RefreshReg$(_c, "SkeletonImage");
+
+  $parcel$ReactRefreshHelpers$46ed.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./skeletonElement":"kRJt8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hklly","1xC6H","bNKaB"], "bNKaB", "parcelRequire7c38")
 
 //# sourceMappingURL=index.0641b553.js.map

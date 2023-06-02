@@ -1,0 +1,35 @@
+.skeleton{
+  background: #ddd;
+  margin:10px 0;
+  border-radius: 4px;
+}
+
+.skeleton.square{
+  width: 255px;
+  height: 200px;
+}
+
+.skeleton.textl{
+  width: 180px;
+  height: 25px;
+}
+
+.skeleton.texts{
+  width: 150px;
+  height: 17px;
+}
+
+
+
+.skeleton-square{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 41px;
+  margin-left: 10px;
+  gap: 10px;
+
+}
+.square-container{
+  display: flex;
+  flex-direction: column;
+}
