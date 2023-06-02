@@ -27512,7 +27512,7 @@ const Body = ()=>{
         getRestaurants();
     }, []);
     async function getRestaurants() {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.4594965&lng=77.0266383&page_type=DESKTOP_WEB_LISTING");
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.4089123&lng=77.3177894&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
         setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
         setFilterRestaurants(json?.data?.cards[2]?.data?.data?.cards);
