@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Shimmer } from "./shimmer";
 import { SkeletonElement } from "./skeletons/skeletonElement";
 import { SkeletonImage } from "./skeletons/skeletonImage";
+import { Link } from "react-router-dom";
 function filterData(searchText, restaurants) {
   return restaurants.filter((restaurant) =>
     restaurant?.data?.name?.toLowerCase()?.includes(searchText.toLowerCase())
@@ -61,7 +62,12 @@ export const Body = () => {
       <div className="card-container">
         {filterRestaurants.map((restaurant) => {
           return (
-            <RestaurantCard {...restaurant.data} key={restaurant.data.id} />
+            <Link
+              to={"/restaurant/" + restaurant.data.id}
+              key={restaurant.data.id}
+            >
+              <RestaurantCard {...restaurant.data} />
+            </Link>
           );
         })}
       </div>
