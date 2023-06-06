@@ -34901,35 +34901,42 @@ const RestaurantMenu = ()=>{
         else return cards[2]?.card?.card?.itemCards || [];
     }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantInfoCard.RestaurantInfoCard), {
-                ...resInfo
-            }, void 0, false, {
-                fileName: "src/components/Menu/RestaurantMenu.js",
-                lineNumber: 33,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "menu",
-                children: menuInfo && Object.values(menuInfo).map((item)=>{
-                    return /*#__PURE__*/ (0, _react.createElement)((0, _dishescard.Dishescard), {
-                        ...item.card.info,
-                        key: item.card.info.id,
-                        __source: {
-                            fileName: "src/components/Menu/RestaurantMenu.js",
-                            lineNumber: 36,
-                            columnNumber: 16
-                        },
-                        __self: undefined
-                    });
-                })
-            }, void 0, false, {
-                fileName: "src/components/Menu/RestaurantMenu.js",
-                lineNumber: 34,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true);
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "menu-container",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantInfoCard.RestaurantInfoCard), {
+                    ...resInfo
+                }, void 0, false, {
+                    fileName: "src/components/Menu/RestaurantMenu.js",
+                    lineNumber: 34,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "menu",
+                    children: menuInfo && Object.values(menuInfo).map((item)=>{
+                        return /*#__PURE__*/ (0, _react.createElement)((0, _dishescard.Dishescard), {
+                            ...item.card.info,
+                            key: item.card.info.id,
+                            __source: {
+                                fileName: "src/components/Menu/RestaurantMenu.js",
+                                lineNumber: 37,
+                                columnNumber: 18
+                            },
+                            __self: undefined
+                        });
+                    })
+                }, void 0, false, {
+                    fileName: "src/components/Menu/RestaurantMenu.js",
+                    lineNumber: 35,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Menu/RestaurantMenu.js",
+            lineNumber: 33,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
 };
 _s(RestaurantMenu, "wPs3xLi/v4i+L1Tqj/Nblua6/ng=", false, function() {
     return [
@@ -34958,41 +34965,68 @@ parcelHelpers.export(exports, "Dishescard", ()=>Dishescard);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constant = require("../../constant");
 var _restaurantMenuCss = require("./RestaurantMenu.css");
-var _placeholderImageJpg = require("../assest/placeholder-image.jpg");
+var _placeholderImageJpg = require("../assets/placeholder-image.jpg");
 var _placeholderImageJpgDefault = parcelHelpers.interopDefault(_placeholderImageJpg);
 const Dishescard = ({ name , imageId , price  })=>{
     const hasImagee = !!imageId;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "dish-container",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: hasImagee ? (0, _constant.url) + imageId : (0, _placeholderImageJpgDefault.default),
-                className: !hasImagee ? "no-image" : ""
-            }, void 0, false, {
-                fileName: "src/components/Menu/Dishescard.js",
-                lineNumber: 11,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: name
-            }, void 0, false, {
-                fileName: "src/components/Menu/Dishescard.js",
-                lineNumber: 12,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "dish-info-container",
                 children: [
-                    price / 100,
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: " ₹"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: name
                     }, void 0, false, {
                         fileName: "src/components/Menu/Dishescard.js",
-                        lineNumber: 15,
+                        lineNumber: 12,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            price / 100,
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: " ₹"
+                            }, void 0, false, {
+                                fileName: "src/components/Menu/Dishescard.js",
+                                lineNumber: 15,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Menu/Dishescard.js",
+                        lineNumber: 13,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Menu/Dishescard.js",
-                lineNumber: 13,
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "dish-image-container",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: hasImagee ? (0, _constant.url) + imageId : (0, _placeholderImageJpgDefault.default),
+                        className: !hasImagee ? "no-image" : ""
+                    }, void 0, false, {
+                        fileName: "src/components/Menu/Dishescard.js",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "add-button",
+                        children: "ADD"
+                    }, void 0, false, {
+                        fileName: "src/components/Menu/Dishescard.js",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Menu/Dishescard.js",
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined)
         ]
@@ -35011,10 +35045,10 @@ $RefreshReg$(_c, "Dishescard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./RestaurantMenu.css":"gbuQX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../constant":"jVIFP","../assest/placeholder-image.jpg":"eYjkd"}],"gbuQX":[function() {},{}],"eYjkd":[function(require,module,exports) {
-module.exports = require("7248e520b7f16c0a").getBundleURL("lPpKD") + "placeholder-image.74739c04.jpg" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","./RestaurantMenu.css":"gbuQX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../constant":"jVIFP","../assets/placeholder-image.jpg":"aqJlF"}],"gbuQX":[function() {},{}],"aqJlF":[function(require,module,exports) {
+module.exports = require("edbdff2b4dbc7846").getBundleURL("lPpKD") + "placeholder-image.06433b48.jpg" + "?" + Date.now();
 
-},{"7248e520b7f16c0a":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"edbdff2b4dbc7846":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -35062,7 +35096,7 @@ parcelHelpers.export(exports, "RestaurantInfoCard", ()=>RestaurantInfoCard);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constant = require("../../constant");
 var _restaurantMenuCss = require("./RestaurantMenu.css");
-var _placeholderImageJpg = require("../assest/placeholder-image.jpg");
+var _placeholderImageJpg = require("../assets/placeholder-image.jpg");
 var _placeholderImageJpgDefault = parcelHelpers.interopDefault(_placeholderImageJpg);
 const RestaurantInfoCard = ({ name , cloudinaryImageId , areaName , cuisines , sla , avgRating  })=>{
     const hasImage = !!cloudinaryImageId;
@@ -35070,66 +35104,87 @@ const RestaurantInfoCard = ({ name , cloudinaryImageId , areaName , cuisines , s
         className: "restaurant-info-container",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "restaurant-image-container",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: hasImage ? (0, _constant.url) + cloudinaryImageId : (0, _placeholderImageJpgDefault.default),
-                    className: !hasImage ? "no-image" : ""
-                }, void 0, false, {
-                    fileName: "src/components/Menu/RestaurantInfoCard.js",
-                    lineNumber: 15,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Menu/RestaurantInfoCard.js",
-                lineNumber: 14,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "restaurant-name-container",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: name
+                        className: "restaurant-image-container",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: hasImage ? (0, _constant.url) + cloudinaryImageId : (0, _placeholderImageJpgDefault.default),
+                            className: !hasImage ? "no-image" : ""
+                        }, void 0, false, {
+                            fileName: "src/components/Menu/RestaurantInfoCard.js",
+                            lineNumber: 16,
+                            columnNumber: 11
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Menu/RestaurantInfoCard.js",
-                        lineNumber: 18,
+                        lineNumber: 15,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: cuisines && cuisines.join(",")
-                    }, void 0, false, {
-                        fileName: "src/components/Menu/RestaurantInfoCard.js",
-                        lineNumber: 19,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "name-info-area-container",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: areaName
-                            }, void 0, false, {
-                                fileName: "src/components/Menu/RestaurantInfoCard.js",
-                                lineNumber: 21,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "name-info-container",
                                 children: [
-                                    sla && sla.lastMileTravel,
-                                    " Km"
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "name-heading",
+                                        children: name
+                                    }, void 0, false, {
+                                        fileName: "src/components/Menu/RestaurantInfoCard.js",
+                                        lineNumber: 20,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "info-text",
+                                        children: cuisines && cuisines.join(",")
+                                    }, void 0, false, {
+                                        fileName: "src/components/Menu/RestaurantInfoCard.js",
+                                        lineNumber: 21,
+                                        columnNumber: 13
+                                    }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Menu/RestaurantInfoCard.js",
-                                lineNumber: 22,
+                                lineNumber: 19,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "area-distance info-text",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: areaName
+                                    }, void 0, false, {
+                                        fileName: "src/components/Menu/RestaurantInfoCard.js",
+                                        lineNumber: 24,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: [
+                                            sla && sla.lastMileTravel,
+                                            "Km"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Menu/RestaurantInfoCard.js",
+                                        lineNumber: 25,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Menu/RestaurantInfoCard.js",
+                                lineNumber: 23,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Menu/RestaurantInfoCard.js",
-                        lineNumber: 20,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Menu/RestaurantInfoCard.js",
-                lineNumber: 17,
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35141,12 +35196,12 @@ const RestaurantInfoCard = ({ name , cloudinaryImageId , areaName , cuisines , s
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Menu/RestaurantInfoCard.js",
-                    lineNumber: 26,
+                    lineNumber: 30,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Menu/RestaurantInfoCard.js",
-                lineNumber: 25,
+                lineNumber: 29,
                 columnNumber: 7
             }, undefined)
         ]
@@ -35165,6 +35220,6 @@ $RefreshReg$(_c, "RestaurantInfoCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./RestaurantMenu.css":"gbuQX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../constant":"jVIFP","../assest/placeholder-image.jpg":"eYjkd"}],"gbuQX":[function() {},{}],"gbuQX":[function() {},{}]},["hklly","1xC6H","bNKaB"], "bNKaB", "parcelRequire7c38")
+},{"react/jsx-dev-runtime":"iTorj","./RestaurantMenu.css":"gbuQX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../constant":"jVIFP","../assets/placeholder-image.jpg":"aqJlF"}],"gbuQX":[function() {},{}],"gbuQX":[function() {},{}]},["hklly","1xC6H","bNKaB"], "bNKaB", "parcelRequire7c38")
 
 //# sourceMappingURL=index.0641b553.js.map

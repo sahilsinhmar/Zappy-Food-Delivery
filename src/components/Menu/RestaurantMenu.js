@@ -40,12 +40,14 @@ export const RestaurantMenu = () => {
   }
   return (
     <>
-      <RestaurantInfoCard {...resInfo} />
-      <div className="menu">
-        {menuInfo &&
-          Object.values(menuInfo).map((item) => {
-            return <Dishescard {...item.card.info} key={item.card.info.id} />;
-          })}
+      <div className="menu-container">
+        <RestaurantInfoCard {...resInfo} />
+        <div className="menu">
+          {menuInfo &&
+            Object.values(menuInfo).map((item) => {
+              return <Dishescard {...item.card.info} key={item.card.info.id} />;
+            })}
+        </div>
       </div>
     </>
   );

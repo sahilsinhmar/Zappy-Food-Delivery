@@ -107,6 +107,133 @@
   display: flex;
 }
 
+.menu-container {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  display: flex;
+}
 
+.menu {
+  width: 900px;
+  border-top: 10px solid #777272;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  display: flex;
+}
+
+.restaurant-info-container {
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 5px;
+  display: flex;
+  box-shadow: 1.95px 1.95px 2.6px #00000026;
+}
+
+.restaurant-image-container {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.restaurant-image-container > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.restaurant-name-container {
+  gap: 15px;
+  display: flex;
+}
+
+.name-info-area-container {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.name-info-container {
+  flex-direction: column;
+  gap: 8px;
+  display: flex;
+}
+
+.name-heading {
+  font-size: 1.9rem;
+}
+
+.info-text {
+  color: #696969;
+}
+
+.area-distance {
+  gap: 10px;
+  display: flex;
+}
+
+.restaurant-ratings-container {
+  align-self: flex-end;
+  margin-right: 15px;
+}
+
+.dish-container {
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid #b1acb0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 20px;
+  display: flex;
+}
+
+.dish-info-container {
+  width: 100%;
+  height: 100%;
+  width: 65%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  padding: 10px;
+  display: flex;
+}
+
+.dish-info-container > div {
+  font-size: 1.1rem;
+}
+
+.dish-image-container {
+  width: 180px;
+  height: 120px;
+  position: relative;
+}
+
+.dish-image-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.add-button {
+  height: 30px;
+  color: #23dd23;
+  cursor: pointer;
+  background-color: #fff;
+  border: .8px solid #23dd23;
+  font-size: .9rem;
+  position: absolute;
+  bottom: -7px;
+  left: 50px;
+  right: 50px;
+}
+
+.add-button:hover {
+  box-shadow: 0 7px 29px #64646f33;
+}
 
 /*# sourceMappingURL=index.3a01df49.css.map */
