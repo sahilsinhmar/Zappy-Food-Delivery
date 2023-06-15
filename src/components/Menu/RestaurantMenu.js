@@ -4,23 +4,28 @@ import { url } from "../../constant";
 import { Dishescard } from "./Dishescard";
 import { RestaurantInfoCard } from "./RestaurantInfoCard";
 import "./RestaurantMenu.css";
-import useRestaurantMenu from "../utils/useRestaurantMenu";
+import useRestaurantInfo from "../utils/useRestaurantInfo";
 import useDishes from "../utils/useDishes";
+import { Recommended } from "./dishescard/recommended";
 
 export const RestaurantMenu = () => {
+  const [visibleSection, setVisibleSection] = useState("recommended");
   const { resid } = useParams();
-  const resInfo = useRestaurantMenu(resid);
-  const [menuInfo, anotherDishCard] = useDishes(resid);
+  const resInfo = useRestaurantInfo(resid);
+  const [anotherDishCard] = useDishes(resid);
   return (
     <>
       <div className="menu-container">
         <RestaurantInfoCard {...resInfo} />
-        <div className="menu">
-          {menuInfo &&
-            Object.values(menuInfo).map((item) => {
-              return <Dishescard {...item.card.info} key={item.card.info.id} />;
-            })}
-        </div>
+        <Recommended
+          title={"Recommended"}
+          isVisible={visibleSection === "recommended"}
+          setVisible={() =>
+            setVisibleSection(
+              visibleSection === "recommended" ? "" : "recommended"
+            )
+          }
+        />
         <div className="menu">
           {anotherDishCard &&
             Object.values(anotherDishCard).map((item) => {
