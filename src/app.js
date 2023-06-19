@@ -6,10 +6,13 @@ import { Body } from "./components/Body";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
-import { RestaurantMenu } from "./components/Menu/RestaurantMenu";
+import { RestaurantMenu } from "./components/RestaurantMenu";
 import { ProfileClass as Profile } from "./components/ProfileClass";
 import { SkeletonImage } from "./components/skeletons/skeletonImage";
 import UserContext from "./components/utils/UserContext";
+import store from "./components/Store";
+import { Provider } from "react-redux";
+import { Cart } from "./components/Cart";
 
 const Instamart = lazy(() => import("./components/Instamart"));
 const AppLayout = () => {
@@ -18,15 +21,17 @@ const AppLayout = () => {
     email: "sahilsinhmarr@gmail.com",
   });
   return (
-    <UserContext.Provider
-      value={{
-        user: user,
-      }}
-    >
-      <Header />
-      <Outlet />
-      <Footer />
-    </UserContext.Provider>
+    <Provider store={store}>
+      <UserContext.Provider
+        value={{
+          user: user,
+        }}
+      >
+        <Header />
+        <Outlet />
+        <Footer />
+      </UserContext.Provider>
+    </Provider>
   );
 };
 const appRouter = createBrowserRouter([
@@ -63,6 +68,10 @@ const appRouter = createBrowserRouter([
             <Instamart />
           </Suspense>
         ),
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
   },

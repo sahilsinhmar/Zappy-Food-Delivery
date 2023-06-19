@@ -5,6 +5,7 @@ import { Shimmer } from "./shimmer";
 import { SkeletonElement } from "./skeletons/skeletonElement";
 import { SkeletonImage } from "./skeletons/skeletonImage";
 import { Link } from "react-router-dom";
+import { GET_RESTAURANTS_LIST } from "./utils/helper";
 function filterData(searchText, restaurants) {
   return restaurants.filter((restaurant) =>
     restaurant?.data?.name?.toLowerCase()?.includes(searchText.toLowerCase())

@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import UserContext from "./utils/UserContext";
+import { useSelector } from "react-redux";
 
 const loggedInUser = () => {
   return true;
@@ -17,6 +18,7 @@ const Title = () => (
 );
 
 export const Header = () => {
+  const totalItemsCount = useSelector((store) => store.cart.totalItemsCount);
   const [isLoggedIn, setLoggedIn] = useState(false);
   const { user } = useContext(UserContext);
   return (
@@ -36,7 +38,9 @@ export const Header = () => {
           <Link to="/instamart">
             <li>Instamart</li>
           </Link>
-          <li>Cart</li>
+          <Link to="/cart">
+            <li>Cart{totalItemsCount}</li>
+          </Link>
         </ul>
       </div>
       {user.name}
