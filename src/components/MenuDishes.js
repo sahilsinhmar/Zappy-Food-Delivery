@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { url } from "../constant";
 import image from "./assets/placeholder-image.jpg";
-import "./RestaurantMenu.css";
 import { useDispatch } from "react-redux";
 import { addItem } from "./Cartslice";
 
@@ -15,7 +14,7 @@ export const MenuDishes = ({ item }) => {
   };
   const hasImage = !!imageId;
   return (
-    <div className="dish-container">
+    <div className="border">
       <div className="dish-info-container">
         <div>{name}</div>
         <div>
