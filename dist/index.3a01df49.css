@@ -122,7 +122,6 @@ a {
 }
 
 .dish-info-container {
-  width: 100%;
   height: 100%;
   width: 65%;
   flex-direction: column;
