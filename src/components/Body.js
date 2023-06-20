@@ -39,18 +39,18 @@ export const Body = () => {
     <Shimmer />
   ) : (
     <>
-      <div>
+      <div className="mt-10 ml-60 flex gap-8">
         <input
-          className="search-input"
+          className="border-b-2 w-1/2 h-12 p-4 "
           type="text"
-          placeholder="search"
+          placeholder="Search for Restaurant"
           value={searchText}
           onChange={(e) => {
             setSearchText(e.target.value);
           }}
         ></input>
         <button
-          className="search-button"
+          className="text-l border w-24 rounded-lg bg-black text-white "
           onClick={() => {
             const data = filterData(searchText, allRestaurants);
             setFilterRestaurants(data);
@@ -60,17 +60,19 @@ export const Body = () => {
         </button>
       </div>
 
-      <div className="card-container">
-        {filterRestaurants.map((restaurant) => {
-          return (
-            <Link
-              to={"/restaurant/" + restaurant.data.id}
-              key={restaurant.data.id}
-            >
-              <RestaurantCard {...restaurant.data} />
-            </Link>
-          );
-        })}
+      <div className="p-20">
+        <div className="flex flex-wrap gap-10 justify-between">
+          {filterRestaurants.map((restaurant) => {
+            return (
+              <Link
+                to={"/restaurant/" + restaurant.data.id}
+                key={restaurant.data.id}
+              >
+                <RestaurantCard {...restaurant.data} />
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </>
   );
