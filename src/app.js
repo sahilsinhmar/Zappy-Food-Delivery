@@ -9,28 +9,19 @@ import { Contact } from "./components/Contact";
 import { RestaurantMenu } from "./components/RestaurantMenu";
 import { ProfileClass as Profile } from "./components/ProfileClass";
 import { SkeletonImage } from "./components/skeletons/skeletonImage";
-import UserContext from "./components/utils/UserContext";
+
 import store from "./components/Store";
 import { Provider } from "react-redux";
 import { Cart } from "./components/Cart";
 
 const Instamart = lazy(() => import("./components/Instamart"));
+
 const AppLayout = () => {
-  const [user, setUser] = useState({
-    name: "Sahil",
-    email: "sahilsinhmarr@gmail.com",
-  });
   return (
     <Provider store={store}>
-      <UserContext.Provider
-        value={{
-          user: user,
-        }}
-      >
-        <Header />
-        <Outlet />
-        <Footer />
-      </UserContext.Provider>
+      <Header />
+      <Outlet />
+      <Footer />
     </Provider>
   );
 };

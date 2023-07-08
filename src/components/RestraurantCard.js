@@ -19,7 +19,7 @@ export const RestaurantCard = ({
     color: isNaN(avgRating) ? "#535665" : "#fff",
   };
   return (
-    <div className="flex-col w-60 mh-60 border rounded-lg  hover:scale-105  ease-in duration-300">
+    <div className="flex-col w-60 mh-60 border rounded-lg  hover:scale-105  ease-in duration-300 shadow">
       <div className="w-60 h-40 ">
         <img
           className="w-full h-full rounded object-cover"
@@ -27,7 +27,7 @@ export const RestaurantCard = ({
         />
       </div>
       <div className="flex-col mt-1">
-        <div className="text-xl ml-1">
+        <div className="text-xl font-semibold ml-1">
           <h6>{name}</h6>
         </div>
         <div className="text-xs ml-1">

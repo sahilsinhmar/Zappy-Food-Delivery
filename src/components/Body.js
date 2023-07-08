@@ -36,12 +36,12 @@ export const Body = () => {
   }
 
   return allRestaurants.length === 0 ? (
-    <Shimmer />
+    <SkeletonImage />
   ) : (
     <>
       <div className="mt-10 ml-60 flex gap-8">
         <input
-          className="border-b-2 w-1/2 h-12 p-4 "
+          className="border-b-2 w-1/2 h-12 p-4 hover:shadow-sm "
           type="text"
           placeholder="Search for Restaurant"
           value={searchText}
