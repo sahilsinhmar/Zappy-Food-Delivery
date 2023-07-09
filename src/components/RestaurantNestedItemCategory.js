@@ -9,7 +9,7 @@ export const RestaurantNestedItemCategory = ({ nestedCategory }) => {
     setVisible(!isVisible);
   };
   return (
-    <div className="p-5">
+    <div className="border-t-2">
       <div className="flex items-center justify-between">
         <h3 className="font-bold text-lg cursor-pointer" onClick={toggleView}>
           {nestedCategory.title}

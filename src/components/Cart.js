@@ -34,7 +34,13 @@ export const Cart = () => {
               <h1>{item.name}</h1>
               <div className="flex justify-between w-[150px] items-center px-2">
                 <ItemQuantity item={item} key={item.id} />
-                <div>₹ {Math.trunc((item.price / 100) * item.quantity)}</div>
+                <div>
+                  ₹{" "}
+                  {Math.trunc(
+                    (item.price / 100) * item.quantity ||
+                      (item.defaultPrice / 100) * item.quantity
+                  )}
+                </div>
               </div>
             </div>
           );

@@ -25,7 +25,7 @@ export const RestaurantInfo = ({
           </div>
           <div className="flex gap-2">
             <div className="font-semibold">
-              {locality}, {areaName}
+              {locality} {areaName}
             </div>
             <div>•</div>
             <div className="font-semibold">{sla?.slaString}</div>
@@ -34,7 +34,7 @@ export const RestaurantInfo = ({
           </div>
         </div>
       </div>
-      <div className="font-semibold">
+      <div className="font-semibold text-2xl">
         <p>Rating {avgRatingString}</p>
       </div>
     </div>

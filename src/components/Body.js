@@ -35,7 +35,7 @@ export const Body = () => {
     return <h1>No restaurant found</h1>;
   }
 
-  return allRestaurants.length === 0 ? (
+  return allRestaurants?.length === 0 ? (
     <SkeletonImage />
   ) : (
     <>
@@ -62,7 +62,7 @@ export const Body = () => {
 
       <div className="p-20">
         <div className="flex flex-wrap gap-10 justify-between">
-          {filterRestaurants.map((restaurant) => {
+          {filterRestaurants?.map((restaurant) => {
             return (
               <Link
                 to={"/restaurant/" + restaurant.data.id}

@@ -7,7 +7,10 @@ function useItemTotal() {
     let total =
       cartItems &&
       Object.values(cartItems)
-        .map((item) => (item.price / 100) * item.quantity)
+        .map((item) => {
+          const price = item.price ?? item.defaultPrice;
+          return (price / 100) * item.quantity;
+        })
         .reduce((acc, curr) => acc + curr, 0);
     return total;
   };

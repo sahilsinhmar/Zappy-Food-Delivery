@@ -5,7 +5,6 @@ import { Footer } from "./components/footer";
 import { Body } from "./components/Body";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { About } from "./components/About";
-import { Contact } from "./components/Contact";
 import { RestaurantMenu } from "./components/RestaurantMenu";
 import { ProfileClass as Profile } from "./components/ProfileClass";
 import { SkeletonImage } from "./components/skeletons/skeletonImage";
@@ -13,6 +12,7 @@ import { SkeletonImage } from "./components/skeletons/skeletonImage";
 import store from "./components/Store";
 import { Provider } from "react-redux";
 import { Cart } from "./components/Cart";
+import Help from "./components/Help";
 
 const Instamart = lazy(() => import("./components/Instamart"));
 
@@ -45,8 +45,8 @@ const appRouter = createBrowserRouter([
         ],
       },
       {
-        path: "/contact",
-        element: <Contact />,
+        path: "/help",
+        element: <Help />,
       },
       {
         path: "/restaurant/:resid",
