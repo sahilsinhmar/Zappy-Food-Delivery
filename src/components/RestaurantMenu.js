@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import { FETCH_API_URL } from "./utils/helper";
 import useRestaurant from "./utils/useRestaurant";
 import { RestaurantInfo } from "./RestaurantInfo";
