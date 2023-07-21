@@ -89,9 +89,10 @@ export const Header = () => {
               </Link>
               <Link
                 onClick={() => toggleDropdown(false)}
-                to="/about"
                 className="text-xl p-2  text-black-600 font-semibold items-center  rounded hover:bg-black hover:text-white  transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 w-full "
+                to="/about"
               >
+                {" "}
                 About
               </Link>
               <Link

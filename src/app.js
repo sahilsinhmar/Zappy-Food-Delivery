@@ -21,7 +21,7 @@ const AppLayout = () => {
   return (
     <Provider store={store}>
       <Header />
-      <Outlet /> {/* Render child components based on the matched route */}
+      <Outlet />
       <Footer />
     </Provider>
   );
@@ -34,7 +34,7 @@ const appRouter = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        path: "/", // Since this route is already covered in the parent AppLayout, you can remove this redundant route.
+        path: "/",
         element: <Body />,
       },
       {
