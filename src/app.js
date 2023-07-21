@@ -8,6 +8,7 @@ import { About } from "./components/About";
 import { RestaurantMenu } from "./components/RestaurantMenu";
 import { ProfileClass as Profile } from "./components/ProfileClass";
 import { SkeletonImage } from "./components/skeletons/skeletonImage";
+import Error from "./components/Error";
 
 import store from "./components/Store";
 import { Provider } from "react-redux";
@@ -29,6 +30,7 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
@@ -37,6 +39,7 @@ const appRouter = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+        errorElement: <Error />,
         children: [
           {
             path: "profile",
