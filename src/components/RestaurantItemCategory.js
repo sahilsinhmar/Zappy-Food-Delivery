@@ -12,7 +12,7 @@ export const RestaurantItemCategory = ({ itemCategory }) => {
 
   return (
     <div className="w-full h-full border-t-[12px] mb-6">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between my-4">
         <h3 className="font-bold text-lg cursor-pointer" onClick={toggleview}>
           {itemCategory.title} ({itemCategory.itemCards.length})
         </h3>

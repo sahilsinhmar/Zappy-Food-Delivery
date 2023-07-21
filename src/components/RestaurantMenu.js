@@ -11,7 +11,7 @@ export const RestaurantMenu = () => {
 
   if (!restaurant) return <SkeletonImage />;
   return (
-    <div className="container mx-auto mb-10">
+    <div className=" w-full">
       <RestaurantInfo {...restaurant?.info} />
       <MenuItems menu={restaurant?.menu} />
     </div>

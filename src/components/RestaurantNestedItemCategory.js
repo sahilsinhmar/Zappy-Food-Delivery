@@ -10,7 +10,7 @@ export const RestaurantNestedItemCategory = ({ nestedCategory }) => {
   };
   return (
     <div className="border-t-2">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between ">
         <h3 className="font-bold text-lg cursor-pointer" onClick={toggleView}>
           {nestedCategory.title}
         </h3>

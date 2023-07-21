@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
-    <div className="w-full h-[50px] bg-gray-950 text-white p-2 flex  items-center justify-around bottom-0 fixed scroll">
-      <div className="text-2xl">Happy Ordering</div>
-      <div className="flex items-center text-xl gap-3">
-        <p className="text-xl">
+    <div className="w-full md:h-[50px]  bg-gray-950 text-white p-2 flex  items-center justify-around bottom-0 fixed scroll">
+      <div className="md:text-2xl text-sm">Happy Ordering</div>
+      <div className="flex items-center md:text-xl text-sm gap-3">
+        <p className="md:text-xl text-sm">
           Made with <span className="text-red">&#x2764;</span>
         </p>
         <p>by</p>

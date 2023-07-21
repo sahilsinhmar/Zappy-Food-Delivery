@@ -22,10 +22,8 @@ export const Body = () => {
   }, []);
 
   async function getRestaurants() {
-    const data = await fetch(
-      GET_RESTAURANTS_LIST
-    );
-    const json = await data.json();
+    const data = await fetch(GET_RESTAURANTS_LIST);
+    const json = await data?.json();
     setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
     setFilterRestaurants(json?.data?.cards[2]?.data?.data?.cards);
   }
@@ -39,39 +37,41 @@ export const Body = () => {
     <SkeletonImage />
   ) : (
     <>
-      <div className="mt-10 ml-60 flex gap-8">
-        <input
-          className="border-b-2 w-1/2 h-12 p-4 hover:shadow-sm "
-          type="text"
-          placeholder="Search for Restaurant"
-          value={searchText}
-          onChange={(e) => {
-            setSearchText(e.target.value);
-          }}
-        ></input>
-        <button
-          className="text-l border w-24 rounded-lg bg-black text-white "
-          onClick={() => {
-            const data = filterData(searchText, allRestaurants);
-            setFilterRestaurants(data);
-          }}
-        >
-          Search
-        </button>
-      </div>
+      <div className="w-full  flex-col flex gap-4 items-center  mb-16">
+        <div className="md:flex-row gap-3 flex flex-col  w-full md:w-[700px] items-center">
+          <input
+            className="border-2 w-full h-12 p-4 hover:shadow-sm "
+            type="text"
+            placeholder="Search for Restaurant"
+            value={searchText}
+            onChange={(e) => {
+              setSearchText(e.target.value);
+            }}
+          ></input>
+          <button
+            className="text-lg border w-24 rounded-lg bg-black text-white p-2 "
+            onClick={() => {
+              const data = filterData(searchText, allRestaurants);
+              setFilterRestaurants(data);
+            }}
+          >
+            Search
+          </button>
+        </div>
 
-      <div className="p-20">
-        <div className="flex flex-wrap gap-10 justify-between">
-          {filterRestaurants?.map((restaurant) => {
-            return (
-              <Link
-                to={"/restaurant/" + restaurant.data.id}
-                key={restaurant.data.id}
-              >
-                <RestaurantCard {...restaurant.data} />
-              </Link>
-            );
-          })}
+        <div className="mt-10">
+          <div className="flex flex-wrap gap-5 md:justify-between justify-evenly">
+            {filterRestaurants?.map((restaurant) => {
+              return (
+                <Link
+                  to={"/restaurant/" + restaurant.data.id}
+                  key={restaurant.data.id}
+                >
+                  <RestaurantCard {...restaurant.data} />
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>

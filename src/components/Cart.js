@@ -14,8 +14,8 @@ export const Cart = () => {
     dispatch(clearCart());
   };
   return Object.values(cartItems).length > 0 ? (
-    <div className="flex m-10 justify-between p-10  h-[400px] max-h-screen">
-      <div className="flex flex-col w-[400px] min-w-[500px] h-full border p-5 items-center ">
+    <div className="md:w-[500px] w-full">
+      <div className="flex flex-col h-full border p-5 items-center ">
         <div className="flex justify-between w-full mb-7">
           <h3 className="text-2xl">Cart Items</h3>
           <button
@@ -57,7 +57,7 @@ export const Cart = () => {
   ) : (
     <div className="max-h-screen flex justify-center items-center flex-col">
       <div>
-        <img src={emptycart} className="w-[500px] h-[400px]" />
+        <img src={emptycart} className="md:w-[500px] md:h-[400px]" />
       </div>
       <div className="text-4xl ml-10">Cart is empty :(</div>
       <button></button>

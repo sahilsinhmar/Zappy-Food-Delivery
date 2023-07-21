@@ -29,7 +29,7 @@ const Help = () => {
     useState(""); /* Initially description of all questions are hidden */
 
   return (
-    <div className="container mb-20 mt-4">
+    <div className=" mb-20 mt-4 w-full">
       <div className="card-container flex flex-col">
         <h1 className="card-container-title pb-5 text-3xl text-center"> FAQ</h1>
         {FAQ.map((question) => {
