@@ -80,7 +80,7 @@ export const Header = () => {
           {toggleDropdown && (
             <div className="dropdown">
               <Link
-                onClick={() => toggleDropdown(false)}
+                onClick={() => setToggleDropdown(false)}
                 className="text-xl p-2  text-black-600 font-semibold items-center  rounded hover:bg-black hover:text-white  transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 w-full"
                 to="/"
               >
@@ -88,7 +88,7 @@ export const Header = () => {
                 Home
               </Link>
               <Link
-                onClick={() => toggleDropdown(false)}
+                onClick={() => setToggleDropdown(false)}
                 className="text-xl p-2  text-black-600 font-semibold items-center  rounded hover:bg-black hover:text-white  transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 w-full "
                 to="/about"
               >
@@ -96,14 +96,14 @@ export const Header = () => {
                 About
               </Link>
               <Link
-                onClick={() => toggleDropdown(false)}
+                onClick={() => setToggleDropdown(false)}
                 to="/help"
                 className="text-xl p-2  text-black-600 font-semibold items-center  rounded hover:bg-black hover:text-white  transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 w-full "
               >
                 Help
               </Link>
               <Link
-                onClick={() => toggleDropdown(false)}
+                onClick={() => setToggleDropdown(false)}
                 to="/instamart"
                 className="text-xl p-2  text-black-600 font-semibold items-center  rounded hover:bg-black hover:text-white  transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 w-full "
               >
