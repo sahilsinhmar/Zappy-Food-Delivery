@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState } from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
@@ -21,11 +21,12 @@ const AppLayout = () => {
   return (
     <Provider store={store}>
       <Header />
-      <Outlet />
+      <Outlet /> {/* Render child components based on the matched route */}
       <Footer />
     </Provider>
   );
 };
+
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -33,7 +34,7 @@ const appRouter = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        path: "/",
+        path: "/", // Since this route is already covered in the parent AppLayout, you can remove this redundant route.
         element: <Body />,
       },
       {
@@ -70,6 +71,7 @@ const appRouter = createBrowserRouter([
     ],
   },
 ]);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<RouterProvider router={appRouter} />);
