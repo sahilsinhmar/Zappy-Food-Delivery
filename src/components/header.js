@@ -55,11 +55,6 @@ export const Header = () => {
             {<MdFastfood />}
             Cart {totalItemsCount}
           </Link>
-          <img
-            src={hamburger}
-            className="rounded-full w-[47px] h-[47px]"
-            alt="profile"
-          />
 
           {isLoggedIn ? (
             <button onClick={() => setLoggedIn(false)} className="black_btn">
