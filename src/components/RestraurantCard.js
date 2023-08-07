@@ -5,10 +5,11 @@ export const RestaurantCard = ({
   name,
   cuisines,
   cloudinaryImageId,
-  costForTwoString,
-  slaString,
+  costForTwo,
+  sla,
   avgRating,
 }) => {
+  console.log(name);
   const buttonStyle = {
     backgroundColor:
       avgRating == "--"
@@ -42,9 +43,9 @@ export const RestaurantCard = ({
             <span>{avgRating}</span>
           </div>
           <div>•</div>
-          <div>{slaString}</div>
+          <div>{sla?.slaString}</div>
           <div>•</div>
-          <div>{costForTwoString}</div>
+          <div>{costForTwo}</div>
         </div>
       </div>
     </div>
