@@ -7,8 +7,8 @@ import { SkeletonImage } from "./skeletons/skeletonImage";
 import { Link } from "react-router-dom";
 import { GET_RESTAURANTS_LIST } from "./utils/helper";
 function filterData(searchText, restaurants) {
-  return restaurants.filter((restaurant) =>
-    restaurant?.data?.name?.toLowerCase()?.includes(searchText.toLowerCase())
+  return restaurants?.filter((restaurant) =>
+    restaurant?.info?.name?.toLowerCase()?.includes(searchText.toLowerCase())
   );
 }
 
@@ -24,8 +24,14 @@ export const Body = () => {
   async function getRestaurants() {
     const data = await fetch(GET_RESTAURANTS_LIST);
     const json = await data?.json();
-    setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-    setFilterRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+
+    setAllRestaurants(
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+    setFilterRestaurants(
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+    console.log(allRestaurants);
   }
 
   if (allRestaurants?.length === 0) return <SkeletonImage />;
@@ -64,10 +70,10 @@ export const Body = () => {
             {filterRestaurants?.map((restaurant) => {
               return (
                 <Link
-                  to={"/restaurant/" + restaurant.data.id}
-                  key={restaurant.data.id}
+                  to={"/restaurant/" + restaurant?.info?.id}
+                  key={restaurant?.info?.id}
                 >
-                  <RestaurantCard {...restaurant.data} />
+                  <RestaurantCard {...restaurant?.info} />
                 </Link>
               );
             })}
