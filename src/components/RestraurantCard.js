@@ -8,45 +8,54 @@ export const RestaurantCard = ({
   costForTwo,
   sla,
   avgRating,
+  areaName,
 }) => {
-  console.log(name);
   const buttonStyle = {
     backgroundColor:
       avgRating == "--"
         ? "#fff"
         : parseFloat(avgRating) < 4.0
         ? "#db7c38"
-        : "#48c479",
+        : "#188c3e",
     color: isNaN(avgRating) ? "#535665" : "#fff",
   };
   return (
-    <div className="flex-col w-60 mh-60 border rounded-lg  hover:scale-105  ease-in duration-300 shadow">
-      <div className="w-60 h-40 ">
+    <div className="flex-col w-full md:w-[280px] h-full  hover:scale-90  ease-in duration-200  ">
+      <div className="w-full h-[179px] max-h-full ">
         <img
-          className="w-full h-full rounded object-cover"
           src={url + cloudinaryImageId}
+          className="h-full w-full object-cover rounded-2xl"
         />
       </div>
-      <div className="flex-col mt-1">
-        <div className="text-xl font-semibold ml-1">
-          <h6>{name}</h6>
-        </div>
-        <div className="text-xs ml-1">
-          <p>{cuisines.slice(0, 2).join(",")}</p>
-        </div>
-        <div className="flex justify-between items-center text-xs p-2 mt-1">
-          <div
-            className="flex items-center border justify-between gap-1 p-1"
-            style={buttonStyle}
-          >
-            <AiFillStar />
-            <span>{avgRating}</span>
+      <div className="flex-col justify-start mt-1 pl-3 gap-2 ">
+        <h6 className="text-lg text-gray-700 font-semibold ">
+          {name.slice(0, 20)}
+        </h6>
+
+        <div className="flex  items-center gap-1 ">
+          <div className="flex items-center gap-1">
+            <div
+              className="flex items-center gap-1 p-1 rounded-full"
+              style={buttonStyle}
+            >
+              <AiFillStar size={12} />
+            </div>
+            <span className="text-[1rem] font-semibold text-gray-700">
+              {avgRating}
+            </span>
           </div>
           <div>•</div>
-          <div>{sla?.slaString}</div>
+          <div className="text-[1rem] font-semibold text-gray-700">
+            {sla?.slaString}
+          </div>
           <div>•</div>
-          <div>{costForTwo}</div>
+          <div className="text-[1rem] font-semibold text-gray-700">
+            {costForTwo}
+          </div>
         </div>
+
+        <p className="text-gray-500">{cuisines.slice(0, 3).join(",")}</p>
+        <p className="text-gray-500">{areaName}</p>
       </div>
     </div>
   );

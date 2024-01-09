@@ -6,133 +6,77 @@ import logo from "./assets/logoo.png";
 import hamburger from "../components/assets/hamburger.png";
 import { MdFastfood } from "react-icons/md";
 
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+
 export const Header = () => {
   const totalItemsCount = useSelector((store) => store.cart.totalItemsCount);
   const [isLoggedIn, setLoggedIn] = useState(false);
   const { user } = useContext(UserContext);
   const [toggleDropdown, setToggleDropdown] = useState(false);
 
+  const Links = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "About",
+      link: "/about",
+    },
+    {
+      name: "Help",
+      link: "/help",
+    },
+  ];
+
   return (
-    <nav className="flex-between w-full mb-16 pt-3">
-      <Link
-        className="flex gap-2 justify-center items-center"
-        to="/"
-        onClick={() => {
-          toggleDropdown(false);
-        }}
-      >
-        <img src={logo} className="w-[50px] h-[50px] object-contain" />
-        <p className="logo_text">Zappy</p>
-      </Link>
-      <div className="mob:hidden sm:hidden xsm:hidden">
-        <div className="flex gap-3 md:gap-5">
-          <Link
-            className="text-xl p-2  text-black-600 font-semibold items-center  rounded hover:bg-black hover:text-white  transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 "
-            to="/"
-          >
-            {" "}
-            Home
-          </Link>
-          <Link
-            to="/about"
-            className="text-xl p-2  text-black-600 font-semibold items-center  rounded hover:bg-black hover:text-white  transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 "
-          >
-            About
-          </Link>
-          <Link
-            to="/help"
-            className="text-xl p-2  text-black-600 font-semibold items-center  rounded hover:bg-black hover:text-white  transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 "
-          >
-            Help
-          </Link>
-          <Link
-            to="/instamart"
-            className="text-xl p-2  text-black-600 font-semibold items-center  rounded hover:bg-black hover:text-white  transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 "
-          >
-            Instamart
-          </Link>
-          <Link className="text-xl p-1 items-center flex gap-2" to="/cart">
-            {<MdFastfood />}
-            Cart {totalItemsCount}
-          </Link>
-
-          {isLoggedIn ? (
-            <button onClick={() => setLoggedIn(false)} className="black_btn">
-              Logout
-            </button>
-          ) : (
-            <button onClick={() => setLoggedIn(true)} className="black_btn">
-              Login
-            </button>
-          )}
+    <div className=" w-screen md:w-full top-0 left-0 py-2">
+      <div className="md:flex items-center justify-between   bg-white  md:px-10 px-7">
+        <Link
+          to="/"
+          className="font-bold text-2xl cursor-pointer flex items-center text-gray-800 gap-2 "
+        >
+          <span className="text-3xl text-gray--600  pt-2">
+            <img src={logo} className="w-[40px] h-[40px] object-contain" />
+          </span>
+          Zappy
+        </Link>
+        <div
+          onClick={() => setToggleDropdown(!toggleDropdown)}
+          className="text-3xl absolute right-8 top-6 cursor-pointer  md:hidden"
+        >
+          {toggleDropdown ? <AiOutlineClose /> : <AiOutlineMenu />}
         </div>
+        <ul
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-0 left-0 w-full md:w-auto md:pl-0 pl-9  transition-all duration-500 ease-in  ${
+            toggleDropdown ? "top-20 opacity-100" : "top-[-490px]"
+          } md:opacity-100`}
+        >
+          {Links.map((item) => (
+            <li
+              onClick={() => setToggleDropdown(false)}
+              key={item.name}
+              className="md:ml-8 md:my-0 my-7 text-xl"
+            >
+              <Link
+                className="text-gray-800 hover:text-gray-400 duration-500"
+                to={item.link}
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
+          <li onClick={() => setToggleDropdown(false)} className="max-w-fit">
+            <Link
+              to="/cart"
+              className=" flex gap-2 justify-center  py-2  hover:text-gray-500 rounded md:ml-8  duration-500 text-xl font-semibold w-[100px] md:border md:border-black md:px-2 md:gap-3 "
+            >
+              {totalItemsCount <= 0 ? "Cart" : totalItemsCount}
+              <MdFastfood size={24} />
+            </Link>
+          </li>
+        </ul>
       </div>
-
-      <div className="md:hidden relative">
-        <div className="flex">
-          <img
-            src={hamburger}
-            className="rounded-full w-[47px] h-[47px]"
-            alt="profile"
-            onClick={() => setToggleDropdown(!toggleDropdown)}
-          />
-
-          {toggleDropdown && (
-            <div className="dropdown">
-              <Link
-                onClick={() => setToggleDropdown(false)}
-                className="text-xl p-2  text-black-600 font-semibold items-center  rounded hover:bg-black hover:text-white  transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 w-full"
-                to="/"
-              >
-                {" "}
-                Home
-              </Link>
-              <Link
-                onClick={() => setToggleDropdown(false)}
-                className="text-xl p-2  text-black-600 font-semibold items-center  rounded hover:bg-black hover:text-white  transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 w-full "
-                to="/about"
-              >
-                {" "}
-                About
-              </Link>
-              <Link
-                onClick={() => setToggleDropdown(false)}
-                to="/help"
-                className="text-xl p-2  text-black-600 font-semibold items-center  rounded hover:bg-black hover:text-white  transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 w-full "
-              >
-                Help
-              </Link>
-              <Link
-                onClick={() => setToggleDropdown(false)}
-                to="/instamart"
-                className="text-xl p-2  text-black-600 font-semibold items-center  rounded hover:bg-black hover:text-white  transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 w-full "
-              >
-                Instamart
-              </Link>
-              <Link
-                onClick={() => setToggleDropdown(false)}
-                className="text-xl text-black-600 font-semibold p-1 items-center flex"
-                to="/cart"
-              >
-                {<MdFastfood className="mr-2" />}
-                Your Cart {totalItemsCount <= 0 ? "is Empty" : totalItemsCount}
-              </Link>
-              {isLoggedIn ? (
-                <button
-                  onClick={() => setLoggedIn(false)}
-                  className="black_btn"
-                >
-                  Logout
-                </button>
-              ) : (
-                <button onClick={() => setLoggedIn(true)} className="black_btn">
-                  Login
-                </button>
-              )}
-            </div>
-          )}
-        </div>
-      </div>
-    </nav>
+    </div>
   );
 };

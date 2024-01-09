@@ -7,6 +7,7 @@ import emptycart from "./assets/emptycart.png";
 
 export const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
+  const resInfo = useSelector((store) => store.res.info);
   const dispatch = useDispatch();
   const getItemTotal = useItemTotal();
 
@@ -14,7 +15,7 @@ export const Cart = () => {
     dispatch(clearCart());
   };
   return Object.values(cartItems).length > 0 ? (
-    <div className="md:w-[500px] w-full">
+    <div className="md:w-[500px] w-full -z-10 mt-16">
       <div className="flex flex-col h-full border p-5 items-center ">
         <div className="flex justify-between w-full mb-7">
           <h3 className="text-2xl">Cart Items</h3>
@@ -30,7 +31,7 @@ export const Cart = () => {
 
         {Object.values(cartItems).map((item) => {
           return (
-            <div className="flex justify-between w-full p-1">
+            <div className="flex justify-between w-full p-1 z-[-10]">
               <h1>{item.name}</h1>
               <div className="flex justify-between w-[150px] items-center px-2">
                 <ItemQuantity item={item} key={item.id} />
@@ -55,12 +56,11 @@ export const Cart = () => {
       </div>
     </div>
   ) : (
-    <div className="max-h-screen flex justify-center items-center flex-col">
+    <div className="max-h-screen flex justify-center items-center flex-col mt-16">
       <div>
         <img src={emptycart} className="md:w-[500px] md:h-[400px]" />
       </div>
       <div className="text-4xl ml-10">Cart is empty :(</div>
-      <button></button>
     </div>
   );
 };

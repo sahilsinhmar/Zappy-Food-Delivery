@@ -4,7 +4,7 @@ import { FAQ } from "../constant";
 
 const Section = ({ id, title, description, isVisible, setIsVisible }) => {
   return (
-    <div className="flex flex-col shadow rounded-md p-2.5 m-2.5">
+    <div className="flex flex-col shadow rounded-md p-2.5 m-2.5 z-[-10]">
       <div className="flex justify-between items-center">
         <h3 className="font-semibold text-lg text-title">{title}</h3>
         {isVisible ? (
@@ -25,8 +25,7 @@ const Section = ({ id, title, description, isVisible, setIsVisible }) => {
 };
 
 const Help = () => {
-  const [visibleSection, setVisibleSection] =
-    useState(""); /* Initially description of all questions are hidden */
+  const [visibleSection, setVisibleSection] = useState("");
 
   return (
     <div className=" mb-20 mt-4 w-full">

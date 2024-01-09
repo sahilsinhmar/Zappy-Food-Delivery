@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react";
 import { GET_RESTAURANT_MENU } from "./helper";
+import { useDispatch } from "react-redux";
+import { addInfo } from "../ResInfoSlice";
 
 const useRestaurant = (resid) => {
   const [restaurant, setRestaurant] = useState(null);
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
     getRestaurantInfo();
@@ -33,6 +37,7 @@ const useRestaurant = (resid) => {
         menu: menu.filter((value) => value !== undefined),
       };
       setRestaurant(modifiedData);
+      dispatch(addInfo(modifiedData?.info));
     } catch (error) {
       console.log(error);
     }
