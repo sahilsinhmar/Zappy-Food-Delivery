@@ -28,16 +28,23 @@ export const Body = () => {
     try {
       const data = await fetch(GET_RESTAURANTS_LIST);
       const json = await data?.json();
+      const restaurantList =
+        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants;
 
-      setAllRestaurants(
-        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants
-      );
+      restraunList.length > 0
+        ? setAllRestaurants(restaurantList)
+        : setAllRestaurants(
+            json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+              ?.restaurants
+          );
+
       setFilterRestaurants(
-        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants
+        restaurantList
+          ? restaurantList
+          : json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+              ?.restaurants
       );
-      console.log(allRestaurants);
     } catch (error) {
       console.log(error);
     }
