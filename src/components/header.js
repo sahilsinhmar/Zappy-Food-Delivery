@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import UserContext from "./utils/UserContext";
 import { useSelector } from "react-redux";
@@ -30,26 +30,30 @@ export const Header = () => {
   ];
 
   return (
-    <div className=" w-screen md:w-full top-0 left-0 py-2">
-      <div className="md:flex items-center justify-between   bg-white  md:px-10 px-7">
-        <Link
-          to="/"
-          className="font-bold text-2xl cursor-pointer flex items-center text-gray-800 gap-2 "
-        >
-          <span className="text-3xl text-gray--600  pt-2">
-            <img src={logo} className="w-[40px] h-[40px] object-contain" />
-          </span>
-          Zappy
-        </Link>
-        <div
-          onClick={() => setToggleDropdown(!toggleDropdown)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer  md:hidden"
-        >
-          {toggleDropdown ? <AiOutlineClose /> : <AiOutlineMenu />}
+    <div className={` w-screen md:w-full top-0 left-0  sticky  `}>
+      <div
+        className={`md:flex items-center justify-between  py-2  md:px-10 px-7 z-20 bg-white`}
+      >
+        <div>
+          <Link
+            to="/"
+            className="font-bold text-2xl cursor-pointer flex items-center text-gray-800 gap-2 "
+          >
+            <span className="text-3xl text-gray-600  pt-2">
+              <img src={logo} className="w-[40px] h-[40px] object-contain" />
+            </span>
+            Zappy
+          </Link>
+          <div
+            onClick={() => setToggleDropdown(!toggleDropdown)}
+            className="text-3xl absolute right-8 top-6 cursor-pointer  md:hidden"
+          >
+            {toggleDropdown ? <AiOutlineClose /> : <AiOutlineMenu />}
+          </div>
         </div>
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-0 left-0 w-full md:w-auto md:pl-0 pl-9  transition-all duration-500 ease-in  ${
-            toggleDropdown ? "top-20 opacity-100" : "top-[-490px]"
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static $ md:z-auto -z-10 left-0 w-full md:w-auto md:pl-0 pl-9 bg-white transition-all duration-500 ease-in  ${
+            toggleDropdown ? "top-12 opacity-100" : "top-[-290px]"
           } md:opacity-100`}
         >
           {Links.map((item) => (

@@ -20,11 +20,11 @@ export const RestaurantCard = ({
     color: isNaN(avgRating) ? "#535665" : "#fff",
   };
   return (
-    <div className="flex-col w-full md:w-[280px] h-full  hover:scale-90  ease-in duration-200  ">
-      <div className="w-full h-[179px] max-h-full ">
+    <div className="flex-col w-full md:w-[280px] h-full    hover:scale-90  ease-in duration-200  ">
+      <div className="w-full md:w-[280px]  h-[179px] ">
         <img
           src={url + cloudinaryImageId}
-          className="h-full w-full object-cover rounded-2xl"
+          className="w-[280px] h-full object-cover rounded-2xl"
         />
       </div>
       <div className="flex-col justify-start mt-1 pl-3 gap-2 ">
